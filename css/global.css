@@ -1,0 +1,4172 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+body {
+  width: 100%;
+}
+
+.navbar {
+  background-color: #fff;
+  font-family: "ALK Life", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar img {
+  width: 130px;
+  height: 45px;
+  margin-left: 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links button {
+  padding: 12px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--primary-text, #1D2130);
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav-links li {
+  margin-right: 25px;
+  padding-top: 15px;
+}
+
+.nav-links li a {
+  color: var(--secondary-text, #525560);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 814px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #FFF;
+    z-index: 0;
+  }
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  #menu-toggle:checked + .menu-icon {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  #menu-toggle:checked + .menu-icon::before {
+    content: "×";
+  }
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+  /* Hide the checkbox after clicking it */
+  #menu-toggle:checked {
+    display: none;
+  }
+}
+section .firstdiv img {
+  position: relative;
+  width: 1500px;
+  height: 735px;
+  margin-top: 10px;
+}
+section .firstdiv h2 {
+  font-family: "ALK Life", sans-serif;
+  position: absolute;
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 76.8px */
+  top: 45%;
+  left: 4%;
+}
+section .firstdiv .but2 {
+  position: absolute;
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  right: 80%;
+  top: 70%;
+}
+section .firstdiv .div2 {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 70%;
+  left: 25%;
+}
+section .firstdiv .div2 img {
+  width: 24px;
+  height: 24px;
+  margin-right: 20px;
+}
+section .firstdiv .div2 p {
+  margin-top: 10px;
+  color: #FFF;
+  text-align: right;
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+section .firstdiv .div3 {
+  display: flex;
+  position: absolute;
+  top: 97.4%;
+}
+section .firstdiv .div3 img {
+  width: 861px;
+  height: 1px;
+  background: #E5E5E5;
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+}
+section .firstdiv .div3 p {
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.sec2 .secondarydiv .secdiv {
+  margin-top: 167.5px;
+  margin-left: 110px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.sec2 .secondarydiv .secdiv img {
+  width: 72px;
+  height: 1px;
+  stroke-width: 2px;
+  stroke: var(--primary-text, #1D2130);
+  margin-right: 24px;
+}
+.sec2 .secondarydiv .secdiv p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec2 .secondarydiv .mindiv {
+  display: flex;
+}
+.sec2 .secondarydiv .mindiv .idkdiv1 {
+  margin-left: 207px;
+}
+.sec2 .secondarydiv .mindiv .idkdiv1 h2 {
+  width: 607px;
+  color: var(--primary-text, #1D2130);
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  margin-bottom: 32px;
+}
+.sec2 .secondarydiv .mindiv .idkdiv1 p {
+  width: 608px;
+  color: var(--secondary-text, #525560);
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.sec2 .secondarydiv .mindiv .chimp1 {
+  margin-left: 96px;
+}
+.sec2 .secondarydiv .mindiv .chimp1 img {
+  width: 480px;
+  height: 578.341px;
+  border-radius: 12px;
+}
+.sec2 .secondarydiv .butt1 button {
+  margin-top: 48px;
+  margin-left: 207px;
+  font-family: "ALK Life", sans-serif;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--green-primary, #00FF00);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+}
+.sec2 .secondarydiv .areadiv {
+  margin-top: 126.34px;
+}
+.sec2 .secondarydiv .areadiv h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-left: 110px;
+  margin-bottom: 33.51px;
+}
+.sec2 .secondarydiv .areadiv .justdiv img {
+  width: 142.358px;
+  height: 45px;
+  margin-left: 96.3px;
+}
+
+.sec3 {
+  margin-top: 161.51px;
+  background: var(--green-tertiary, #EFF7F2);
+  width: 100%;
+}
+.sec3 .thirddiv {
+  padding-top: 96px;
+}
+.sec3 .thirddiv .divv1 {
+  margin-bottom: 32px;
+  margin-left: 110px;
+  display: flex;
+  align-items: center;
+}
+.sec3 .thirddiv .divv1 img {
+  width: 72px;
+  height: 2px;
+  stroke-width: 2px;
+  stroke: var(--primary-text, #1D2130);
+  margin-right: 24px;
+}
+.sec3 .thirddiv .divv1 p {
+  color: var(--primary-text, #1D2130);
+  font-size: 16px;
+  font-family: "ALK Life", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec3 .thirddiv .opendiv {
+  margin-left: 207px;
+}
+.sec3 .thirddiv .opendiv h2 {
+  width: 608px;
+  color: var(--primary-text, #1D2130);
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  margin-bottom: 16px;
+}
+.sec3 .thirddiv .opendiv p {
+  color: var(--secondary-text, #525560);
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.sec3 .thirddiv .opendiv .merdiv {
+  margin-top: 32px;
+  display: flex;
+}
+.sec3 .thirddiv .opendiv .merdiv .img-1 {
+  width: 480px;
+  height: 658px;
+  border-radius: 12px;
+  margin-left: 60px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv {
+  margin-left: 80px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .mtadiv {
+  margin-bottom: 24px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .mtadiv p {
+  width: 608px;
+  padding-left: 55px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .mtadiv .mindiv1 {
+  display: flex;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .mtadiv .mindiv1 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 24px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .idk2 {
+  margin-bottom: 24px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .idk2 p {
+  width: 608px;
+  padding-left: 55px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .idk2 .justdiv1 {
+  display: flex;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .idk2 .justdiv1 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 24px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .dontdiv {
+  margin-bottom: 24px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .dontdiv p {
+  width: 608px;
+  padding-left: 55px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .dontdiv .divclass {
+  display: flex;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .dontdiv .divclass h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 24px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .mtavari p {
+  width: 608px;
+  padding-left: 55px;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .mtavari .arcise {
+  display: flex;
+}
+.sec3 .thirddiv .opendiv .merdiv .itsdiv .mtavari .arcise h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 24px;
+}
+
+.sec-4 {
+  margin-top: 100px;
+  margin-left: 110px;
+}
+.sec-4 .nonclass {
+  margin-bottom: 32px;
+  display: flex;
+  align-items: center;
+}
+.sec-4 .nonclass img {
+  width: 72px;
+  height: 1px;
+}
+.sec-4 .nonclass p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+.sec-4 .indep {
+  width: 640px;
+  color: var(--primary-text, #1D2130);
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  margin-left: 100px;
+  margin-bottom: 65.64px;
+}
+.sec-4 .demo {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-4 .demo .indemo img {
+  position: relative;
+  width: 380px;
+  height: 421px;
+  border-radius: 12px;
+}
+.sec-4 .demo .indemo h2 {
+  position: absolute;
+  width: 523px;
+  color: #FFF;
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+  top: 482vh;
+  left: 19vh;
+  padding: 80px 48px 48px;
+}
+.sec-4 .demo .indemo p {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 500vh;
+  left: 25vh;
+}
+.sec-4 .demo .indemo button {
+  position: absolute;
+  font-family: "ALK Life", sans-serif;
+  padding: 16px 32px;
+  color: #000;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  top: 539vh;
+  left: 24vh;
+}
+.sec-4 .demo .nodiv img {
+  position: relative;
+  width: 380px;
+  height: 421px;
+  border-radius: 12px;
+}
+.sec-4 .demo .nodiv h2 {
+  position: absolute;
+  width: 315px;
+  color: #fff;
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+  top: 482vh;
+  padding: 80px 48px 48px;
+}
+.sec-4 .demo .nodiv p {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 506vh;
+  left: 89vh;
+}
+.sec-4 .demo .nodiv button {
+  position: absolute;
+  border-radius: 4px;
+  font-family: "ALK Life", sans-serif;
+  padding: 16px 32px;
+  color: #000;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  top: 539vh;
+  left: 89vh;
+}
+.sec-4 .demo .child img {
+  position: relative;
+  width: 380px;
+  height: 421px;
+  border-radius: 12px;
+}
+.sec-4 .demo .child h2 {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+  top: 482vh;
+  padding: 80px 48px 48px;
+}
+.sec-4 .demo .child p {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 503vh;
+  left: 150vh;
+}
+.sec-4 .demo .child button {
+  position: absolute;
+  border-radius: 4px;
+  font-family: "ALK Life", sans-serif;
+  padding: 16px 32px;
+  color: #000;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  top: 539vh;
+  left: 150vh;
+}
+
+.sec-5 {
+  margin-top: 96px;
+}
+.sec-5 .parentdiv {
+  width: 100%;
+  height: 576px;
+  background: var(--black, #0B0706);
+}
+.sec-5 .parentdiv .child1 {
+  display: flex;
+}
+.sec-5 .parentdiv .child1 .nondiv {
+  padding: 142px 110px;
+}
+.sec-5 .parentdiv .child1 .nondiv h2 {
+  width: 611px;
+  color: #FFF;
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  margin-bottom: 16px;
+}
+.sec-5 .parentdiv .child1 .nondiv p {
+  width: 606px;
+  color: #fff;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.sec-5 .parentdiv .child1 .imgg-1 {
+  padding-top: 96px;
+  padding-left: 250px;
+}
+.sec-5 .parentdiv .child2 {
+  display: flex;
+  padding-left: 111px;
+}
+.sec-5 .parentdiv .child2 .cocu {
+  align-items: center;
+  display: flex;
+  padding-left: 24px;
+}
+.sec-5 .parentdiv .child2 .cocu img {
+  width: 16px;
+  height: 16px;
+}
+.sec-5 .parentdiv .child2 .cocu p {
+  color: #FFF;
+  font-size: 16px;
+  font-family: "ALK Life", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  padding-left: 4px;
+}
+.sec-5 .parentdiv .class2 {
+  display: flex;
+  padding-top: 8px;
+  padding-left: 111px;
+}
+.sec-5 .parentdiv .class2 .class3 {
+  display: flex;
+  align-items: center;
+  padding-left: 24px;
+}
+.sec-5 .parentdiv .class2 .class3 img {
+  width: 16px;
+  height: 16px;
+}
+.sec-5 .parentdiv .class2 .class3 p {
+  color: #FFF;
+  font-size: 16px;
+  font-family: "ALK Life", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 25.6px */
+  padding-left: 4px;
+}
+.sec-5 .whatdiv {
+  margin: 96px 110px;
+}
+.sec-5 .whatdiv img {
+  position: relative;
+  width: 1280px;
+  height: 384px;
+  border-radius: 12px;
+}
+.sec-5 .whatdiv h2 {
+  position: absolute;
+  width: 631px;
+  color: #FFF;
+  text-align: center;
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  top: 4893px;
+  left: 435px;
+}
+.sec-5 .whatdiv button {
+  position: absolute;
+  padding: 16px 32px;
+  justify-content: center;
+  font-family: "ALK Life", sans-serif;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--green-primary, #70C174);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  top: 5100px;
+  left: 510px;
+}
+.sec-5 .whatdiv :nth-child(4) {
+  position: absolute;
+  color: #1D2130;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  top: 5100px;
+  left: 800px;
+}
+.sec-5 .readnews {
+  margin-top: 96px;
+  margin-left: 110px;
+}
+.sec-5 .readnews h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 56px */
+  margin-bottom: 48px;
+}
+.sec-5 .readnews .readournews1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-5 .readnews .readournews1 .containent img {
+  width: 302px;
+  height: 192px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.sec-5 .readnews .readournews1 .containent h3 {
+  width: 290px;
+  color: var(--black, #1C1D28);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  margin-bottom: 8px;
+}
+.sec-5 .readnews .readournews1 .containent p {
+  width: 290px;
+  color: var(--secondary-text, #525560);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.sec-5 .ournews {
+  margin-top: 96px;
+  margin-left: 110px;
+}
+.sec-5 .ournews .cleanprog {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.sec-5 .ournews .cleanprog h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 56px */
+}
+.sec-5 .ournews .cleanprog img {
+  width: 900px;
+  height: 1px;
+  padding-left: 24px;
+}
+.sec-5 .ournews .boreddiv {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-5 .ournews .boreddiv .div21 {
+  width: 628px;
+  height: 191px;
+  border-radius: 8px;
+  background: var(--green-secondary, #BEF3C0);
+  display: flex;
+}
+.sec-5 .ournews .boreddiv .div21 .news {
+  padding: 32px 40px;
+}
+.sec-5 .ournews .boreddiv .div21 .news h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  font-variant: small-caps;
+}
+.sec-5 .ournews .boreddiv .div21 .news p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec-5 .ournews .boreddiv .div21 .tyydiv {
+  padding-top: 40px;
+}
+.sec-5 .ournews .boreddiv .div21 .tyydiv .idkclass {
+  margin-bottom: 8px;
+}
+.sec-5 .ournews .boreddiv .div21 .tyydiv .idkclass p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec-5 .ournews .boreddiv .div21 .tyydiv .nonediv {
+  display: flex;
+}
+.sec-5 .ournews .boreddiv .div21 .tyydiv .nonediv h3 {
+  width: 381px;
+  color: var(--primary-text, #1D2130);
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+}
+.sec-5 .ournews .boreddiv .div21 .tyydiv .nonediv img {
+  width: 56px;
+  height: 56px;
+}
+
+footer {
+  width: 100%;
+  height: 402px;
+  background: var(--black, #0B0706);
+  margin-top: 96px;
+}
+footer .footerdiv {
+  padding-top: 97px;
+  padding-left: 110px;
+  display: flex;
+}
+footer .footerdiv .class4 img {
+  width: 160px;
+  height: 50px;
+  margin-right: 30px;
+}
+footer .footerdiv .divli1 {
+  padding-top: 17px;
+  padding-left: 40px;
+}
+footer .footerdiv .divli1 ul li {
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+  margin-bottom: 20px;
+}
+footer .footerdiv .maindiv1 {
+  padding-left: 110px;
+}
+footer .footerdiv .maindiv1 h2 {
+  width: 440px;
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+}
+footer .footerdiv .maindiv1 .maindiv2 {
+  display: flex;
+}
+footer .footerdiv .maindiv1 .maindiv2 input {
+  width: 300px;
+  height: 63px;
+  border-radius: 4px;
+  border: 1px solid rgba(235, 240, 249, 0.3);
+  color: rgba(235, 240, 249, 0.3);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 22px 24px;
+}
+footer .footerdiv .maindiv1 .maindiv2 button {
+  height: 64px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.navbar {
+  background-color: #fff;
+  font-family: "ALK Life", sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar img {
+  width: 130px;
+  height: 45px;
+  margin-left: 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links button {
+  padding: 12px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--primary-text, #1D2130);
+  color: #FFF;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.nav-links li {
+  margin-right: 25px;
+  padding-top: 15px;
+}
+
+.nav-links li a {
+  color: var(--secondary-text, #525560);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    z-index: 0;
+  }
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .menu-icon:hover {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  #menu-toggle:checked + .menu-icon {
+    background-color: #555;
+    border-radius: 4px;
+  }
+  #menu-toggle:checked + .menu-icon::before {
+    content: "×";
+  }
+  #menu-toggle:checked ~ .nav-links {
+    display: flex;
+  }
+  /* Hide the checkbox after clicking it */
+  #menu-toggle:checked {
+    display: none;
+  }
+}
+.sec-1 {
+  margin-top: 96px;
+  margin-left: 110px;
+}
+.sec-1 .msobelidiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.sec-1 .msobelidiv img {
+  width: 72px;
+  height: 2px;
+}
+.sec-1 .msobelidiv p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+.sec-1 .msobeldiv1 {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-1 .msobeldiv1 h2 {
+  width: 624px;
+  color: var(--primary-text, #1D2130);
+  /* H1 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+  padding-left: 20px;
+}
+.sec-1 .msobeldiv1 .minichild p {
+  width: 496px;
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  margin-bottom: 16px;
+}
+.sec-1 .msobeldiv1 .minichild :nth-child(2) {
+  width: 496px;
+  color: var(--primary-text, #1D2130);
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.section2 {
+  width: 100%;
+  margin-top: 320px;
+}
+.section2 .transparent1 {
+  width: 100%;
+  height: 867px;
+  background: var(--green-tertiary, #EFF7F2);
+}
+.section2 .transparent1 .ourmission {
+  display: flex;
+}
+.section2 .transparent1 .ourmission img {
+  width: 1280px;
+  height: 448px;
+  border-radius: 12px;
+  position: absolute;
+  top: 660px;
+  left: 110px;
+}
+.section2 .transparent1 .ourmission .whatwedo {
+  padding-top: 320px;
+  padding-left: 170px;
+}
+.section2 .transparent1 .ourmission .whatwedo P {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.section2 .transparent1 .ourmission .whatwedo h3 {
+  width: 496px;
+  color: var(--primary-text, #1D2130);
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+  margin-bottom: 8px;
+}
+.section2 .transparent1 .ourmission .whatwedo :nth-child(3) {
+  width: 496px;
+  color: var(--primary-text, #1D2130);
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.section2 .transparent1 .nonidiv {
+  padding-left: 110px;
+  padding-top: 96px;
+}
+.section2 .transparent1 .nonidiv p {
+  padding-left: 40px;
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 49.51px;
+}
+.section2 .transparent1 .nonidiv .align {
+  padding-left: 20px;
+}
+.section2 .transparent1 .nonidiv .align img {
+  width: 160px;
+  height: 50px;
+  margin-right: 90px;
+}
+
+.section3 {
+  margin-left: 110px;
+  margin-top: 96px;
+}
+.section3 .rewards h2 {
+  color: var(--primary-text, #1D2130);
+  text-align: center;
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  margin-bottom: 48px;
+}
+.section3 .rewards .fleximg {
+  display: flex;
+  justify-content: space-around;
+}
+.section3 .rewards .fleximg .fleximg1 img {
+  padding-left: 40px;
+}
+.section3 .rewards .fleximg .fleximg1 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+  padding-left: 70px;
+}
+.section3 .rewards .fleximg .fleximg1 h4 {
+  color: var(--primary-text, #1D2130);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+}
+.section3 .rewards .fleximg .fleximg1 p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  text-transform: uppercase;
+  padding-left: 40px;
+}
+.section3 .journey {
+  width: 1280px;
+  height: 576px;
+  border-radius: 12px;
+  background: var(--black, #0B0706);
+  margin-top: 96px;
+  padding-left: 96px;
+  padding-top: 128px;
+  display: flex;
+}
+.section3 .journey img {
+  width: 584px;
+  height: 420px;
+  border-radius: 12px 0px 0px 12px;
+}
+.section3 .journey .journey2 .journeydiv {
+  display: flex;
+}
+.section3 .journey .journey2 .journeydiv .ourdiv1 {
+  padding-right: 32px;
+}
+.section3 .journey .journey2 .journeydiv .ourdiv1 h2 {
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 38.4px */
+}
+.section3 .journey .journey2 .journeydiv .ourdiv1 p {
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.*/
+}
+.section3 .journey .journey2 .ourgroup {
+  margin-bottom: 30px;
+}
+.section3 .journey .journey2 .ourgroup p {
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.section3 .journey .journey2 .ourgroup h2 {
+  width: 600px;
+  color: #FFF;
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.section3 .journey .journey2 .ourgroup :nth-child(3) {
+  width: 488.224px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.sec-4 {
+  margin-top: 160px;
+  margin-left: 110px;
+}
+.sec-4 .ourteam {
+  text-align: center;
+  margin-bottom: 48px;
+}
+.sec-4 .ourteam h2 {
+  color: var(--primary-text, #1D2130);
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.sec-4 .ourteam p {
+  width: 519px;
+  color: var(--secondary-text, #525560);
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin-left: 440px;
+}
+.sec-4 .meetteam {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.sec-4 .meetteam .negativediv h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  padding-left: 30px;
+}
+.sec-4 .meetteam .negativediv p {
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  opacity: 0.6000000238;
+  padding-left: 60px;
+  margin-bottom: 16px;
+}
+.sec-4 .meetteam .negativediv .dontidk {
+  margin-bottom: 50px;
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv .dontidk img {
+  padding-left: 20px;
+}
+.sec-4 .meetteam .negativediv1 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv1 p {
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  opacity: 0.6000000238;
+  padding-left: 80px;
+  margin-bottom: 16px;
+}
+.sec-4 .meetteam .negativediv1 .dontidk {
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv1 .dontidk img {
+  padding-left: 20px;
+}
+.sec-4 .meetteam .negativediv2 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv2 p {
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  opacity: 0.6000000238;
+  padding-left: 70px;
+  margin-bottom: 16px;
+}
+.sec-4 .meetteam .negativediv2 .dontidk {
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv2 .dontidk img {
+  padding-left: 20px;
+}
+.sec-4 .meetteam .negativediv3 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv3 p {
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  opacity: 0.6000000238;
+  padding-left: 60px;
+  margin-bottom: 16px;
+}
+.sec-4 .meetteam .negativediv3 .dontidk {
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv3 .dontidk img {
+  padding-left: 20px;
+}
+.sec-4 .meetteam .negativediv4 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  padding-left: 68px;
+}
+.sec-4 .meetteam .negativediv4 p {
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  opacity: 0.6000000238;
+  padding-left: 77px;
+  margin-bottom: 16px;
+}
+.sec-4 .meetteam .negativediv4 .dontidk {
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv4 .dontidk img {
+  padding-left: 20px;
+}
+.sec-4 .meetteam .negativediv5 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  padding-left: 80px;
+}
+.sec-4 .meetteam .negativediv5 p {
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  opacity: 0.6000000238;
+  padding-left: 110px;
+  margin-bottom: 16px;
+}
+.sec-4 .meetteam .negativediv5 .dontidk {
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv5 .dontidk img {
+  padding-left: 20px;
+}
+.sec-4 .meetteam .negativediv6 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv6 p {
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  opacity: 0.6000000238;
+  padding-left: 80px;
+  margin-bottom: 16px;
+}
+.sec-4 .meetteam .negativediv6 .dontidk {
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv6 .dontidk img {
+  padding-left: 20px;
+}
+.sec-4 .meetteam .negativediv7 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 32px */
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv7 p {
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 160%; /* 19.2px */
+  opacity: 0.6000000238;
+  padding-left: 80px;
+  margin-bottom: 16px;
+}
+.sec-4 .meetteam .negativediv7 .dontidk {
+  padding-left: 60px;
+}
+.sec-4 .meetteam .negativediv7 .dontidk img {
+  padding-left: 20px;
+}
+.sec-4 .whatdiv {
+  margin-top: 96px;
+}
+.sec-4 .whatdiv img {
+  position: relative;
+  width: 1280px;
+  height: 384px;
+  border-radius: 12px;
+}
+.sec-4 .whatdiv h2 {
+  position: absolute;
+  width: 631px;
+  color: #FFF;
+  text-align: center;
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  top: 4110px;
+  left: 435px;
+}
+.sec-4 .whatdiv button {
+  position: absolute;
+  padding: 16px 32px;
+  justify-content: center;
+  font-family: "ALK Life", sans-serif;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--green-primary, #70C174);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  top: 4310px;
+  left: 510px;
+}
+.sec-4 .whatdiv :nth-child(4) {
+  position: absolute;
+  color: #1D2130;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  top: 4310px;
+  left: 800px;
+}
+.sec-4 .readnews {
+  margin-top: 96px;
+}
+.sec-4 .readnews h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 56px */
+  margin-bottom: 48px;
+}
+.sec-4 .readnews .readournews1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-4 .readnews .readournews1 .containent img {
+  width: 302px;
+  height: 192px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.sec-4 .readnews .readournews1 .containent h3 {
+  width: 290px;
+  color: var(--black, #1C1D28);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  margin-bottom: 8px;
+}
+.sec-4 .readnews .readournews1 .containent p {
+  width: 290px;
+  color: var(--secondary-text, #525560);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.sec-4 .ournews {
+  margin-top: 96px;
+}
+.sec-4 .ournews .cleanprog {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.sec-4 .ournews .cleanprog h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 56px */
+}
+.sec-4 .ournews .cleanprog img {
+  width: 900px;
+  height: 1px;
+  padding-left: 24px;
+}
+.sec-4 .ournews .boreddiv {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-4 .ournews .boreddiv .div21 {
+  width: 628px;
+  height: 191px;
+  border-radius: 8px;
+  background: var(--green-secondary, #BEF3C0);
+  display: flex;
+}
+.sec-4 .ournews .boreddiv .div21 .news {
+  padding: 32px 40px;
+}
+.sec-4 .ournews .boreddiv .div21 .news h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  font-variant: small-caps;
+}
+.sec-4 .ournews .boreddiv .div21 .news p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec-4 .ournews .boreddiv .div21 .tyydiv {
+  padding-top: 40px;
+}
+.sec-4 .ournews .boreddiv .div21 .tyydiv .idkclass {
+  margin-bottom: 8px;
+}
+.sec-4 .ournews .boreddiv .div21 .tyydiv .idkclass p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec-4 .ournews .boreddiv .div21 .tyydiv .nonediv {
+  display: flex;
+}
+.sec-4 .ournews .boreddiv .div21 .tyydiv .nonediv h3 {
+  width: 381px;
+  color: var(--primary-text, #1D2130);
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+}
+.sec-4 .ournews .boreddiv .div21 .tyydiv .nonediv img {
+  width: 56px;
+  height: 56px;
+}
+
+footer {
+  width: 100%;
+  height: 402px;
+  background: var(--black, #0B0706);
+  margin-top: 96px;
+}
+footer .footerdiv {
+  padding-top: 97px;
+  padding-left: 110px;
+  display: flex;
+}
+footer .footerdiv .class4 img {
+  width: 160px;
+  height: 50px;
+  margin-right: 30px;
+}
+footer .footerdiv .divli1 {
+  padding-top: 17px;
+  padding-left: 40px;
+}
+footer .footerdiv .divli1 ul li {
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+  margin-bottom: 20px;
+}
+footer .footerdiv .maindiv3 {
+  padding-left: 110px;
+}
+footer .footerdiv .maindiv3 h2 {
+  width: 440px;
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+}
+footer .footerdiv .maindiv3 .maindiv4 {
+  display: flex;
+}
+footer .footerdiv .maindiv3 .maindiv4 input {
+  width: 300px;
+  height: 63px;
+  border-radius: 4px;
+  border: 1px solid rgba(235, 240, 249, 0.3);
+  color: rgba(235, 240, 249, 0.3);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 22px 24px;
+}
+footer .footerdiv .maindiv3 .maindiv4 button {
+  height: 64px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sec-6 {
+  margin: 96px 110px;
+  display: flex;
+  justify-content: space-between;
+}
+.sec-6 img {
+  width: 480px;
+  height: 384px;
+  border-radius: 12px;
+}
+.sec-6 .parentdiv1 .shesavalidiv {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.sec-6 .parentdiv1 .shesavalidiv img {
+  width: 72px;
+  height: 2px;
+  stroke-width: 2px;
+  stroke: var(--primary-text, #1D2130);
+}
+.sec-6 .parentdiv1 .shesavalidiv p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+.sec-6 .parentdiv1 .sashualodiv1 {
+  padding-left: 90px;
+}
+.sec-6 .parentdiv1 .sashualodiv1 h1 {
+  width: 461px;
+  color: var(--primary-text, #1D2130);
+  /* H1 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+}
+.sec-6 .parentdiv1 .sashualodiv1 p {
+  width: 594px;
+  color: var(--secondary-text, #525560);
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.sec-7 {
+  margin-top: 96px;
+}
+.sec-7 .parentdiv2 {
+  width: 100%;
+  height: 574px;
+  background: var(--green-tertiary, #EFF7F2);
+}
+.sec-7 .parentdiv2 h2 {
+  color: var(--primary-text, #1D2130);
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  padding-left: 110px;
+  padding-top: 96px;
+}
+.sec-7 .parentdiv2 .miniparent {
+  padding-left: 110px;
+  padding-top: 100px;
+  display: flex;
+  justify-content: space-around;
+}
+.sec-7 .parentdiv2 .miniparent .div33 {
+  display: flex;
+}
+.sec-7 .parentdiv2 .miniparent .div33 img {
+  width: 28px;
+  height: 28px;
+}
+.sec-7 .parentdiv2 .miniparent .div33 .dividk1 {
+  padding-left: 24px;
+}
+.sec-7 .parentdiv2 .miniparent .div33 .dividk1 h3 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.sec-7 .parentdiv2 .miniparent .div33 .dividk1 p {
+  width: 332px;
+  color: var(--secondary-text, #525560);
+  /* Paragraph small */
+  font-family: "ALK Life", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 22.4px */
+}
+
+.sec-8 {
+  margin: 96px 110px;
+}
+.sec-8 .vipdiv {
+  margin-bottom: 64px;
+}
+.sec-8 .vipdiv p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 16px;
+}
+.sec-8 .vipdiv h2 {
+  width: 700px;
+  color: var(--primary-text, #1D2130);
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  text-align: center;
+  align-items: center;
+  margin-left: 300px;
+}
+.sec-8 .vipdiv1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-8 .vipdiv1 .vipgroup img {
+  position: relative;
+  width: 400px;
+  height: 440px;
+  border-radius: 12px;
+}
+.sec-8 .vipdiv1 .vipgroup h3 {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+  top: 1600px;
+  left: 160px;
+}
+.sec-8 .vipdiv1 .vipgroup p {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1670px;
+  left: 160px;
+}
+.sec-8 .vipdiv1 .vipgroup :nth-child(4) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1710px;
+}
+.sec-8 .vipdiv1 .vipgroup :nth-child(5) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1750px;
+}
+.sec-8 .vipdiv1 .vipgroup :nth-child(6) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1790px;
+}
+.sec-8 .vipdiv1 .vipgroup :nth-child(7) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1830px;
+}
+.sec-8 .vipdiv1 .vipgroup1 img {
+  position: relative;
+  width: 400px;
+  height: 440px;
+  border-radius: 12px;
+}
+.sec-8 .vipdiv1 .vipgroup1 h3 {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+  top: 1600px;
+  left: 630px;
+}
+.sec-8 .vipdiv1 .vipgroup1 p {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1670px;
+  left: 630px;
+}
+.sec-8 .vipdiv1 .vipgroup1 :nth-child(4) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1710px;
+  left: 630px;
+}
+.sec-8 .vipdiv1 .vipgroup1 :nth-child(5) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1750px;
+  left: 630px;
+}
+.sec-8 .vipdiv1 .vipgroup1 :nth-child(6) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1790px;
+  left: 630px;
+}
+.sec-8 .vipdiv1 .vipgroup1 :nth-child(7) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1830px;
+  left: 630px;
+}
+.sec-8 .vipdiv1 .vipgroup2 img {
+  position: relative;
+  width: 400px;
+  height: 440px;
+  border-radius: 12px;
+}
+.sec-8 .vipdiv1 .vipgroup2 h3 {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+  top: 1600px;
+  left: 1100px;
+}
+.sec-8 .vipdiv1 .vipgroup2 p {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1670px;
+  left: 1100px;
+}
+.sec-8 .vipdiv1 .vipgroup2 :nth-child(4) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1710px;
+  left: 1100px;
+}
+.sec-8 .vipdiv1 .vipgroup2 :nth-child(5) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1750px;
+  left: 1100px;
+}
+.sec-8 .vipdiv1 .vipgroup2 :nth-child(6) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1790px;
+  left: 1100px;
+}
+.sec-8 .vipdiv1 .vipgroup2 :nth-child(7) {
+  position: absolute;
+  width: 315px;
+  color: #FFF;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  top: 1830px;
+  left: 1100px;
+}
+.sec-8 .whatdiv {
+  margin-top: 96px;
+}
+.sec-8 .whatdiv img {
+  position: relative;
+  width: 1280px;
+  height: 384px;
+  border-radius: 12px;
+}
+.sec-8 .whatdiv h2 {
+  position: absolute;
+  width: 631px;
+  color: #FFF;
+  text-align: center;
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+  top: 2130px;
+  left: 435px;
+}
+.sec-8 .whatdiv button {
+  position: absolute;
+  padding: 16px 32px;
+  justify-content: center;
+  font-family: "ALK Life", sans-serif;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--green-primary, #70C174);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  top: 2360px;
+  left: 510px;
+}
+.sec-8 .whatdiv :nth-child(4) {
+  position: absolute;
+  color: #1D2130;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  top: 2360px;
+  left: 800px;
+}
+.sec-8 .readnews {
+  margin-top: 96px;
+}
+.sec-8 .readnews h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 56px */
+  margin-bottom: 48px;
+}
+.sec-8 .readnews .readournews1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-8 .readnews .readournews1 .containent img {
+  width: 302px;
+  height: 192px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.sec-8 .readnews .readournews1 .containent h3 {
+  width: 290px;
+  color: var(--black, #1C1D28);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  margin-bottom: 8px;
+}
+.sec-8 .readnews .readournews1 .containent p {
+  width: 290px;
+  color: var(--secondary-text, #525560);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.sec-8 .ournews {
+  margin-top: 96px;
+}
+.sec-8 .ournews .cleanprog {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.sec-8 .ournews .cleanprog h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 56px */
+}
+.sec-8 .ournews .cleanprog img {
+  width: 900px;
+  height: 1px;
+  padding-left: 24px;
+}
+.sec-8 .ournews .boreddiv {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-8 .ournews .boreddiv .div21 {
+  width: 628px;
+  height: 191px;
+  border-radius: 8px;
+  background: var(--green-secondary, #BEF3C0);
+  display: flex;
+}
+.sec-8 .ournews .boreddiv .div21 .news {
+  padding: 32px 40px;
+}
+.sec-8 .ournews .boreddiv .div21 .news h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  font-variant: small-caps;
+}
+.sec-8 .ournews .boreddiv .div21 .news p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec-8 .ournews .boreddiv .div21 .tyydiv {
+  padding-top: 40px;
+}
+.sec-8 .ournews .boreddiv .div21 .tyydiv .idkclass {
+  margin-bottom: 8px;
+}
+.sec-8 .ournews .boreddiv .div21 .tyydiv .idkclass p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec-8 .ournews .boreddiv .div21 .tyydiv .nonediv {
+  display: flex;
+}
+.sec-8 .ournews .boreddiv .div21 .tyydiv .nonediv h3 {
+  width: 381px;
+  color: var(--primary-text, #1D2130);
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+}
+.sec-8 .ournews .boreddiv .div21 .tyydiv .nonediv img {
+  width: 56px;
+  height: 56px;
+}
+
+footer {
+  width: 100%;
+  height: 402px;
+  background: var(--black, #0B0706);
+  margin-top: 96px;
+}
+footer .footerdiv {
+  padding-top: 97px;
+  padding-left: 110px;
+  display: flex;
+}
+footer .footerdiv .class4 img {
+  width: 160px;
+  height: 50px;
+  margin-right: 30px;
+}
+footer .footerdiv .divli1 {
+  padding-top: 17px;
+  padding-left: 40px;
+}
+footer .footerdiv .divli1 ul li {
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+  margin-bottom: 20px;
+}
+footer .footerdiv .maindiv5 {
+  padding-left: 110px;
+}
+footer .footerdiv .maindiv5 h2 {
+  width: 440px;
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+}
+footer .footerdiv .maindiv5 .maindiv6 {
+  display: flex;
+}
+footer .footerdiv .maindiv5 .maindiv6 input {
+  width: 300px;
+  height: 63px;
+  border-radius: 4px;
+  border: 1px solid rgba(235, 240, 249, 0.3);
+  color: rgba(235, 240, 249, 0.3);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 22px 24px;
+}
+footer .footerdiv .maindiv5 .maindiv6 button {
+  height: 64px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sec-9 {
+  width: 100%;
+  height: 768px;
+  background: var(--green-tertiary, #EFF7F2);
+}
+.sec-9 .div30 {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-9 .div30 .newscontent {
+  padding: 96px 110px;
+}
+.sec-9 .div30 .newscontent .newstab {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.sec-9 .div30 .newscontent .newstab img {
+  width: 72px;
+  height: 2px;
+}
+.sec-9 .div30 .newscontent .newstab p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+.sec-9 .div30 .newscontent .newscont {
+  padding-left: 90px;
+}
+.sec-9 .div30 .newscontent .newscont h1 {
+  width: 496px;
+  color: var(--primary-text, #1D2130);
+  /* H1 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+  margin-bottom: 16px;
+}
+.sec-9 .div30 .newscontent .newscont p {
+  width: 496px;
+  color: var(--secondary-text, #525560);
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin-bottom: 32px;
+}
+.sec-9 .div30 .newscontent .newscont button {
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--green-primary, #70C174);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  color: #FFF;
+  text-align: right;
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sec-9 .div30 .newscontent .newscont button:hover {
+  background-color: #40E0D0;
+}
+.sec-9 .div30 .newsdiv1 {
+  width: 592px;
+  height: 576px;
+  border-radius: 12px;
+  background: #FFF;
+  margin-top: 96px;
+}
+.sec-9 .div30 .newsdiv1 .whatchnews {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 24px;
+}
+.sec-9 .div30 .newsdiv1 .whatchnews img {
+  width: 192px;
+  height: 160px;
+  border-radius: 8px;
+}
+.sec-9 .div30 .newsdiv1 .whatchnews .pataradiv h3 {
+  width: 296px;
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 30px */
+  margin-bottom: 7px;
+}
+.sec-9 .div30 .newsdiv1 .whatchnews .pataradiv p {
+  width: 296px;
+  color: var(--secondary-text, #525560);
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+
+.sec-10 {
+  margin: 96px 110px;
+}
+.sec-10 .recnetnews h2 {
+  color: var(--primary-text, #1D2130);
+  text-align: center;
+  /* H2 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 57.6px */
+}
+.sec-10 .recnetnews p {
+  width: 450px;
+  color: var(--secondary-text, #525560);
+  text-align: center;
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  margin-left: 420px;
+}
+.sec-10 .readnews {
+  margin-top: 30px;
+}
+.sec-10 .readnews .readournews1 {
+  display: flex;
+  justify-content: space-between;
+}
+.sec-10 .readnews .readournews1 .containent img {
+  width: 302px;
+  height: 192px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.sec-10 .readnews .readournews1 .containent h3 {
+  width: 290px;
+  color: var(--black, #1C1D28);
+  font-family: "ALK Life", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; /* 30px */
+  margin-bottom: 8px;
+}
+.sec-10 .readnews .readournews1 .containent p {
+  width: 290px;
+  color: var(--secondary-text, #525560);
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.sec-10 .ournews {
+  margin-top: 96px;
+}
+.sec-10 .ournews .cleanprog {
+  display: flex;
+  align-items: center;
+  margin-bottom: 48px;
+}
+.sec-10 .ournews .cleanprog h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 140%; /* 56px */
+}
+.sec-10 .ournews .cleanprog img {
+  width: 900px;
+  height: 1px;
+  padding-left: 24px;
+}
+.sec-10 .ournews .boreddiv {
+  display: flex;
+  justify-content: space-around;
+}
+.sec-10 .ournews .boreddiv .div21 {
+  width: 628px;
+  height: 191px;
+  border-radius: 8px;
+  background: var(--green-secondary, #BEF3C0);
+  display: flex;
+}
+.sec-10 .ournews .boreddiv .div21 .news {
+  padding: 32px 40px;
+}
+.sec-10 .ournews .boreddiv .div21 .news h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%; /* 57.6px */
+  font-variant: small-caps;
+}
+.sec-10 .ournews .boreddiv .div21 .news p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec-10 .ournews .boreddiv .div21 .tyydiv {
+  padding-top: 40px;
+}
+.sec-10 .ournews .boreddiv .div21 .tyydiv .idkclass {
+  margin-bottom: 8px;
+}
+.sec-10 .ournews .boreddiv .div21 .tyydiv .idkclass p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.sec-10 .ournews .boreddiv .div21 .tyydiv .nonediv {
+  display: flex;
+}
+.sec-10 .ournews .boreddiv .div21 .tyydiv .nonediv h3 {
+  width: 381px;
+  color: var(--primary-text, #1D2130);
+  /* H3 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%; /* 42px */
+}
+.sec-10 .ournews .boreddiv .div21 .tyydiv .nonediv img {
+  width: 56px;
+  height: 56px;
+}
+
+footer {
+  width: 100%;
+  height: 402px;
+  background: var(--black, #0B0706);
+  margin-top: 96px;
+}
+footer .footerdiv {
+  padding-top: 97px;
+  padding-left: 110px;
+  display: flex;
+}
+footer .footerdiv .class4 img {
+  width: 160px;
+  height: 50px;
+  margin-right: 30px;
+}
+footer .footerdiv .divli1 {
+  padding-top: 17px;
+  padding-left: 40px;
+}
+footer .footerdiv .divli1 ul li {
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+  margin-bottom: 20px;
+}
+footer .footerdiv .maindiv7 {
+  padding-left: 110px;
+}
+footer .footerdiv .maindiv7 h2 {
+  width: 440px;
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+}
+footer .footerdiv .maindiv7 .maindiv8 {
+  display: flex;
+}
+footer .footerdiv .maindiv7 .maindiv8 input {
+  width: 300px;
+  height: 63px;
+  border-radius: 4px;
+  border: 1px solid rgba(235, 240, 249, 0.3);
+  color: rgba(235, 240, 249, 0.3);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 22px 24px;
+}
+footer .footerdiv .maindiv7 .maindiv8 button {
+  height: 64px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.sec-11 {
+  width: 100%;
+  height: 600px;
+  background: var(--off-white, #EBF0F9);
+}
+.sec-11 .contact {
+  display: flex;
+  padding: 96px 110px;
+  justify-content: space-between;
+}
+.sec-11 .contact .idk24 .contactus {
+  display: flex;
+  align-items: center;
+  margin-bottom: 32px;
+}
+.sec-11 .contact .idk24 .contactus img {
+  width: 72px;
+  height: 2px;
+}
+.sec-11 .contact .idk24 .contactus p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-left: 24px;
+}
+.sec-11 .contact .idk24 .letscontact {
+  padding-left: 90px;
+}
+.sec-11 .contact .idk24 .letscontact h1 {
+  width: 480.451px;
+  color: var(--b, #1D2130);
+  /* H1 */
+  font-family: "ALK Life", sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 67.2px */
+  margin-bottom: 16px;
+}
+.sec-11 .contact .idk24 .letscontact p {
+  width: 480.451px;
+  color: var(--b, #1D2130);
+  /* Paragraph */
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+}
+.sec-11 .contact .contac1 .contact2 {
+  margin-bottom: 48px;
+}
+.sec-11 .contact .contac1 .contact2 h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+  margin-bottom: 10px;
+}
+.sec-11 .contact .contac1 .contact2 p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.sec-11 .contact .contac1 .meil {
+  margin-bottom: 48px;
+}
+.sec-11 .contact .contac1 .meil h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+  margin-bottom: 10px;
+}
+.sec-11 .contact .contac1 .meil p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.sec-11 .contact .contac1 .meil1 {
+  margin-bottom: 32px;
+}
+.sec-11 .contact .contac1 .meil1 h2 {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 38.4px */
+  margin-bottom: 10px;
+}
+.sec-11 .contact .contac1 .meil1 p {
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 175% */
+}
+.sec-11 .contact .contac1 .socialimg img {
+  padding-right: 20px;
+}
+
+.sec-12 {
+  margin: 96px 366px;
+}
+.sec-12 .logindiv .logindiv1 {
+  margin-bottom: 20px;
+}
+.sec-12 .logindiv .logindiv1 input {
+  width: 350px;
+  height: 64px;
+  border-radius: 4px;
+  border: 3px solid rgba(235, 240, 249, 0.3);
+  font-family: "ALK Life", sans-serif;
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 19.2px */
+  padding: 5px 25px;
+  opacity: 0.6;
+}
+.sec-12 .logindiv .logindiv2 {
+  margin-bottom: 55px;
+}
+.sec-12 .logindiv .logindiv2 input {
+  width: 350px;
+  height: 64px;
+  border-radius: 4px;
+  border: 3px solid rgba(235, 240, 249, 0.3);
+  font-family: "ALK Life", sans-serif;
+  color: var(--primary-text, #1D2130);
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 19.2px */
+  padding: 5px 25px;
+  opacity: 0.6;
+}
+.sec-12 .logindiv .textarea1 {
+  margin-bottom: 32px;
+}
+.sec-12 .logindiv .textarea1 textarea {
+  width: 703px;
+  height: 156px;
+  border-radius: 4px;
+  border: 1px solid var(--border, #E5E5E5);
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 25.6px */
+  padding: 5px 25px;
+}
+.sec-12 .logindiv button {
+  display: inline-flex;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: var(--green-primary, #70C174);
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  margin-left: 294px;
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  text-align: right;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.sec-12 .logindiv button:hover {
+  background-color: #00BFFF;
+  color: #FFF;
+}
+
+.sec00 img {
+  width: 100%;
+  height: 448px;
+}
+
+.footer1 {
+  width: 100%;
+  height: 402px;
+  background: var(--black, #0B0706);
+  margin-top: 0px;
+}
+.footer1 .footerdiv1 {
+  padding-top: 97px;
+  padding-left: 110px;
+  display: flex;
+}
+.footer1 .footerdiv1 .class41 img {
+  width: 160px;
+  height: 50px;
+  margin-right: 30px;
+}
+.footer1 .footerdiv1 .divli12 {
+  padding-top: 17px;
+  padding-left: 40px;
+}
+.footer1 .footerdiv1 .divli12 ul li {
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 160%; /* 25.6px */
+  margin-bottom: 20px;
+}
+.footer1 .footerdiv1 .maindiv24 {
+  padding-left: 110px;
+}
+.footer1 .footerdiv1 .maindiv24 h2 {
+  width: 440px;
+  color: #FFF;
+  font-family: "ALK Life", sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 140%; /* 56px */
+}
+.footer1 .footerdiv1 .maindiv24 .maindiv10 {
+  display: flex;
+}
+.footer1 .footerdiv1 .maindiv24 .maindiv10 input {
+  width: 300px;
+  height: 63px;
+  border-radius: 4px;
+  border: 1px solid rgba(235, 240, 249, 0.3);
+  color: rgba(235, 240, 249, 0.3);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 22px 24px;
+}
+.footer1 .footerdiv1 .maindiv24 .maindiv10 button {
+  height: 64px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  background: #FFF;
+  -webkit-backdrop-filter: blur(40px);
+  backdrop-filter: blur(40px);
+  color: var(--primary-text, #1D2130);
+  font-family: "ALK Life", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (max-width: 1200px) {
+  section {
+    width: 100%;
+  }
+  section .firstdiv img {
+    position: initial;
+    width: 100%;
+    height: 500px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  section .firstdiv h2 {
+    top: 30%;
+    font-size: 25px;
+  }
+  section .firstdiv .but2 {
+    top: 45%;
+    right: 55%;
+    padding-top: 7px;
+  }
+  section .firstdiv .div2 {
+    top: 46%;
+    left: 48%;
+  }
+  section .firstdiv .div3 {
+    top: 63%;
+  }
+  section .firstdiv .div3 p {
+    font-size: 11px;
+    width: 170px;
+    margin-left: 30px;
+    margin-right: 0px;
+  }
+  section .firstdiv .div3 img {
+    width: 20px;
+  }
+  .sec2 .secondarydiv .secdiv {
+    margin-left: 70px;
+  }
+  .sec2 .secondarydiv .mindiv {
+    flex-wrap: wrap;
+  }
+  .sec2 .secondarydiv .mindiv .idkdiv1 {
+    margin-left: 0px;
+  }
+  .sec2 .secondarydiv .mindiv .idkdiv1 h2 {
+    font-size: 21px;
+    padding-left: 40px;
+  }
+  .sec2 .secondarydiv .mindiv .idkdiv1 p {
+    width: 300px;
+    padding-left: 40px;
+    margin-bottom: 30px;
+  }
+  .sec2 .secondarydiv .mindiv .chimp1 {
+    margin-left: 40px;
+  }
+  .sec2 .secondarydiv .mindiv .chimp1 img {
+    width: 300px;
+    height: 400px;
+  }
+  .sec2 .secondarydiv .butt1 {
+    margin-left: 0px;
+  }
+  .sec2 .secondarydiv .butt1 button {
+    margin-left: 40px;
+  }
+  .sec2 .secondarydiv .areadiv h2 {
+    margin-left: 40px;
+  }
+  .sec3 {
+    width: 100%;
+  }
+  .sec3 .thirddiv .divv1 {
+    margin-left: 40px;
+  }
+  .sec3 .thirddiv .opendiv {
+    margin-left: 0px;
+  }
+  .sec3 .thirddiv .opendiv h2 {
+    font-size: 24px;
+    width: 450px;
+    margin-left: 15px;
+  }
+  .sec3 .thirddiv .opendiv p {
+    width: 350px;
+    margin-left: 10px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv {
+    flex-wrap: wrap;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .img-1 {
+    width: 300px;
+    height: 400px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv {
+    margin-left: 0px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .mtadiv p {
+    width: 300px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .mtadiv .mindiv1 {
+    margin-left: 20px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .mtadiv .mindiv1 img {
+    width: 21px;
+    height: 21px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .mtadiv .mindiv1 h3 {
+    font-size: 18px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .idk2 p {
+    width: 300px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .idk2 .justdiv1 {
+    margin-left: 20px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .idk2 .justdiv1 img {
+    width: 21px;
+    height: 21px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .idk2 .justdiv1 h3 {
+    font-size: 18px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .dontdiv p {
+    width: 300px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .dontdiv .divclass {
+    margin-left: 20px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .dontdiv .divclass img {
+    width: 21px;
+    height: 21px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .dontdiv .divclass h3 {
+    font-size: 18px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .mtavari {
+    margin-bottom: 20px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .mtavari p {
+    width: 300px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .mtavari .arcise {
+    margin-left: 20px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .mtavari .arcise img {
+    width: 21px;
+    height: 21px;
+  }
+  .sec3 .thirddiv .opendiv .merdiv .itsdiv .mtavari .arcise h3 {
+    font-size: 18px;
+  }
+  .sec-4 {
+    margin-left: 0px;
+  }
+  .sec-4 .nonclass {
+    margin-left: 50px;
+  }
+  .sec-4 .indep {
+    margin-left: 35px;
+  }
+  .sec-4 .indep h2 {
+    font-size: 22px;
+    width: 400px;
+    line-height: 21px;
+  }
+  .sec-4 .demo {
+    flex-wrap: wrap;
+  }
+  .sec-4 .demo .indemo h2 {
+    top: 335rem;
+    left: 0.5rem;
+  }
+  .sec-4 .demo .indemo p {
+    top: 343rem;
+    left: 3rem;
+  }
+  .sec-4 .demo .indemo button {
+    top: 357rem;
+    left: 3rem;
+  }
+  .sec-4 .demo .nodiv h2 {
+    top: 362rem;
+  }
+  .sec-4 .demo .nodiv p {
+    top: 373rem;
+    left: 1.5rem;
+  }
+  .sec-4 .demo .nodiv button {
+    top: 386rem;
+    left: 3rem;
+  }
+  .sec-4 .demo .child h2 {
+    left: 1rem;
+    top: 387rem;
+  }
+  .sec-4 .demo .child p {
+    left: 2rem;
+    top: 397rem;
+  }
+  .sec-4 .demo .child button {
+    left: 2rem;
+    top: 413rem;
+  }
+  .sec-5 .parentdiv {
+    width: 100%;
+  }
+  .sec-5 .parentdiv .child1 {
+    flex-direction: column;
+  }
+  .sec-5 .parentdiv .child1 .nondiv {
+    padding: 0px;
+  }
+  .sec-5 .parentdiv .child1 .nondiv h2 {
+    font-size: 19px;
+    width: 350px;
+    padding-left: 1rem;
+  }
+  .sec-5 .parentdiv .child1 .nondiv p {
+    width: 300px;
+    padding-left: 1rem;
+  }
+  .sec-5 .parentdiv .child1 .imgg-1 {
+    padding: 0px;
+  }
+  .sec-5 .parentdiv .child1 .imgg-1 img {
+    padding-left: 20px;
+    width: 180px;
+    height: 180px;
+  }
+  .sec-5 .parentdiv .child2 {
+    padding-left: 1rem;
+    flex-direction: column;
+  }
+  .sec-5 .parentdiv .child2 .cocu {
+    padding: 0px;
+  }
+  .sec-5 .parentdiv .child2 .cocu img {
+    width: 10px;
+    height: 10px;
+  }
+  .sec-5 .parentdiv .child2 .cocu p {
+    font-size: 11px;
+  }
+  .sec-5 .parentdiv .class2 {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .sec-5 .parentdiv .class2 .class3 {
+    padding-left: 1rem;
+  }
+  .sec-5 .parentdiv .class2 .class3 img {
+    width: 10px;
+    height: 10px;
+  }
+  .sec-5 .parentdiv .class2 .class3 p {
+    font-size: 11px;
+  }
+  .sec-5 .whatdiv {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-5 .whatdiv img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 384px;
+  }
+  .sec-5 .whatdiv h2 {
+    top: 473rem;
+    left: 1rem;
+    font-size: 16px;
+    width: 350px;
+  }
+  .sec-5 .whatdiv button {
+    top: 479rem;
+    left: 0.3rem;
+  }
+  .sec-5 .whatdiv :nth-child(4) {
+    top: 479rem;
+    left: 14.6rem;
+  }
+  .sec-5 .readnews {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-5 .readnews h2 {
+    font-size: 19px;
+    padding-left: 3rem;
+  }
+  .sec-5 .readnews .readournews1 {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .sec-5 .readnews .readournews1 .containent {
+    padding-top: 20px;
+  }
+  .sec-5 .ournews {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-5 .ournews .cleanprog {
+    padding-left: 2rem;
+  }
+  .sec-5 .ournews .cleanprog h2 {
+    font-size: 18px;
+  }
+  .sec-5 .ournews .cleanprog img {
+    width: 100px;
+  }
+  .sec-5 .ournews .boreddiv {
+    flex-direction: column;
+  }
+  .sec-5 .ournews .boreddiv .div21 {
+    width: 100%;
+  }
+  .sec-5 .ournews .boreddiv .div21 .news {
+    padding-top: 45px;
+  }
+  .sec-5 .ournews .boreddiv .div21 .news h2 {
+    font-size: 20px;
+  }
+  .sec-5 .ournews .boreddiv .div21 .tyydiv .nonediv h3 {
+    font-size: 17px;
+    width: 200px;
+  }
+  .sec-5 .ournews .boreddiv .div21 .tyydiv .nonediv img {
+    width: 32px;
+    height: 32px;
+  }
+  footer .footerdiv {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  footer .footerdiv .class4 img {
+    width: 80px;
+    height: 32px;
+    margin-right: 0px;
+  }
+  footer .footerdiv .divli1 {
+    padding-left: 20px;
+  }
+  footer .footerdiv .divli1 ul li {
+    font-size: 9px;
+  }
+  footer .footerdiv .maindiv1 {
+    padding: 0px;
+    padding-left: 40px;
+    position: absolute;
+    top: 668rem;
+  }
+  footer .footerdiv .maindiv1 h2 {
+    font-size: 18px;
+  }
+  footer .footerdiv .maindiv1 .maindiv2 {
+    flex-direction: column;
+  }
+  footer .footerdiv .maindiv1 .maindiv2 button {
+    width: 200px;
+  }
+  .sec-1 {
+    margin-left: 30px;
+  }
+  .sec-1 .msobeldiv1 {
+    flex-direction: column;
+  }
+  .sec-1 .msobeldiv1 h2 {
+    font-size: 19px;
+    width: 350px;
+    margin-bottom: 32px;
+  }
+  .sec-1 .msobeldiv1 .minichild {
+    padding-left: 20px;
+  }
+  .sec-1 .msobeldiv1 .minichild p {
+    font-size: 18px;
+    width: 300px;
+  }
+  .sec-1 .msobeldiv1 .minichild :nth-child(2) {
+    width: 250px;
+  }
+  .section2 {
+    margin-top: 160px;
+  }
+  .section2 .transparent1 .ourmission {
+    flex-direction: column;
+  }
+  .section2 .transparent1 .ourmission img {
+    width: 100%;
+    height: 160px;
+    left: 0px;
+    top: 44.5em;
+  }
+  .section2 .transparent1 .ourmission .whatwedo {
+    padding-left: 10px;
+    padding-top: 0px;
+  }
+  .section2 .transparent1 .ourmission .whatwedo h3 {
+    font-size: 20px;
+  }
+  .section2 .transparent1 .ourmission .whatwedo :nth-child(3) {
+    width: 350px;
+  }
+  .section2 .transparent1 .nonidiv {
+    padding-left: 0px;
+    padding-top: 0px;
+  }
+  .section2 .transparent1 .nonidiv p {
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+  .section2 .transparent1 .nonidiv .align {
+    padding: 0px;
+    margin-right: 0px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section2 .transparent1 .nonidiv .align img {
+    width: 110px;
+    height: 35px;
+    margin-right: 10px;
+  }
+  .section3 {
+    margin-left: 0px;
+  }
+  .section3 .rewards h2 {
+    font-size: 20px;
+  }
+  .section3 .rewards .fleximg {
+    flex-wrap: wrap;
+  }
+  .section3 .rewards .fleximg .fleximg1 {
+    padding-left: 0px;
+    padding-top: 20px;
+  }
+  .section3 .journey {
+    margin-left: 0px;
+    padding: 0px;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .section3 .journey img {
+    width: 100%;
+    height: 300px;
+  }
+  .section3 .journey .journey2 {
+    padding-left: 20px;
+  }
+  .section3 .journey .journey2 .ourgroup {
+    margin-bottom: 0px;
+  }
+  .section3 .journey .journey2 .ourgroup p {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .section3 .journey .journey2 .ourgroup h2 {
+    font-size: 21px;
+  }
+  .section3 .journey .journey2 .ourgroup :nth-child(3) {
+    width: 300px;
+  }
+  .section3 .journey .journey2 .journeydiv .ourdiv1 {
+    padding-right: 18px;
+  }
+  .section3 .journey .journey2 .journeydiv .ourdiv1 h2 {
+    font-size: 21px;
+  }
+  .section3 .journey .journey2 .journeydiv .ourdiv1 p {
+    font-size: 12px;
+  }
+  .sec-4 {
+    margin-left: 0px;
+  }
+  .sec-4 .ourteam {
+    margin-left: 0px;
+  }
+  .sec-4 .ourteam h2 {
+    font-size: 25px;
+  }
+  .sec-4 .ourteam p {
+    margin-left: 0px;
+    width: 350px;
+    padding-left: 50px;
+  }
+  .sec-4 .whatdiv {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-4 .whatdiv img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 384px;
+  }
+  .sec-4 .whatdiv h2 {
+    top: 453rem;
+    left: 1rem;
+    font-size: 16px;
+    width: 350px;
+  }
+  .sec-4 .whatdiv button {
+    top: 460rem;
+    left: 0.3rem;
+  }
+  .sec-4 .whatdiv :nth-child(4) {
+    top: 460rem;
+    left: 14.6rem;
+  }
+  .sec-4 .readnews {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-4 .readnews h2 {
+    font-size: 19px;
+    padding-left: 3rem;
+  }
+  .sec-4 .readnews .readournews1 {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .sec-4 .readnews .readournews1 .containent {
+    padding-top: 20px;
+  }
+  .sec-4 .ournews {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-4 .ournews .cleanprog {
+    padding-left: 2rem;
+  }
+  .sec-4 .ournews .cleanprog h2 {
+    font-size: 18px;
+  }
+  .sec-4 .ournews .cleanprog img {
+    width: 100px;
+  }
+  .sec-4 .ournews .boreddiv {
+    flex-direction: column;
+  }
+  .sec-4 .ournews .boreddiv .div21 {
+    width: 100%;
+  }
+  .sec-4 .ournews .boreddiv .div21 .news {
+    padding-top: 45px;
+  }
+  .sec-4 .ournews .boreddiv .div21 .news h2 {
+    font-size: 20px;
+  }
+  .sec-4 .ournews .boreddiv .div21 .tyydiv .nonediv h3 {
+    font-size: 17px;
+    width: 200px;
+  }
+  .sec-4 .ournews .boreddiv .div21 .tyydiv .nonediv img {
+    width: 32px;
+    height: 32px;
+  }
+  footer .footerdiv {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  footer .footerdiv .class4 img {
+    width: 80px;
+    height: 32px;
+    margin-right: 0px;
+  }
+  footer .footerdiv .divli1 {
+    padding-left: 20px;
+  }
+  footer .footerdiv .divli1 ul li {
+    font-size: 9px;
+  }
+  footer .footerdiv .maindiv3 {
+    padding: 0px;
+    padding-left: 40px;
+    position: absolute;
+    top: 648rem;
+  }
+  footer .footerdiv .maindiv3 h2 {
+    font-size: 18px;
+  }
+  footer .footerdiv .maindiv3 .maindiv4 {
+    flex-direction: column;
+  }
+  footer .footerdiv .maindiv3 .maindiv4 button {
+    width: 200px;
+  }
+  .sec-6 {
+    flex-wrap: wrap;
+    margin-left: 0px;
+  }
+  .sec-6 img {
+    width: 100%;
+  }
+  .sec-6 .parentdiv1 .shesavalidiv {
+    padding-left: 30px;
+  }
+  .sec-6 .parentdiv1 .sashualodiv1 {
+    padding-left: 29px;
+  }
+  .sec-6 .parentdiv1 .sashualodiv1 h1 {
+    font-size: 23px;
+  }
+  .sec-6 .parentdiv1 .sashualodiv1 p {
+    width: 300px;
+  }
+  .sec-7 .parentdiv2 {
+    width: 100%;
+    height: 796px;
+  }
+  .sec-7 .parentdiv2 h2 {
+    padding-left: 10px;
+    padding-top: 30px;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .sec-7 .parentdiv2 .miniparent {
+    flex-direction: column;
+    padding: 0px;
+  }
+  .sec-7 .parentdiv2 .miniparent .div33 img {
+    width: 32px;
+    height: 32px;
+  }
+  .sec-7 .parentdiv2 .miniparent .div33 .dividk1 {
+    padding: 5px;
+  }
+  .sec-7 .parentdiv2 .miniparent .div33 .dividk1 h3 {
+    font-size: 20px;
+  }
+  .sec-8 {
+    margin-left: 0px;
+  }
+  .sec-8 .vipdiv {
+    margin-bottom: 20px;
+  }
+  .sec-8 .vipdiv p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  .sec-8 .vipdiv h2 {
+    margin-left: 0px;
+    text-align: left;
+    font-size: 22px;
+    padding-left: 8px;
+  }
+  .sec-8 .vipdiv1 {
+    flex-wrap: wrap;
+  }
+  .sec-8 .vipdiv1 .vipgroup h3 {
+    left: 3rem;
+    top: 120rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup p {
+    left: 3rem;
+    top: 124rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup :nth-child(4) {
+    left: 3rem;
+    top: 126.5rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup :nth-child(5) {
+    left: 3rem;
+    top: 129rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup :nth-child(6) {
+    left: 3rem;
+    top: 131.5rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup :nth-child(7) {
+    left: 3rem;
+    top: 134rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup1 h3 {
+    left: 5rem;
+    top: 147rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup1 p {
+    left: 5rem;
+    top: 151rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup1 :nth-child(4) {
+    left: 5rem;
+    top: 153.5rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup1 :nth-child(5) {
+    left: 5rem;
+    top: 156rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup1 :nth-child(6) {
+    left: 5rem;
+    top: 158.5rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup1 :nth-child(7) {
+    left: 5rem;
+    top: 161rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup2 h3 {
+    left: 6rem;
+    top: 174rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup2 p {
+    left: 6rem;
+    top: 178rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup2 :nth-child(4) {
+    left: 6rem;
+    top: 180.5rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup2 :nth-child(5) {
+    left: 6rem;
+    top: 183.5rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup2 :nth-child(6) {
+    left: 6rem;
+    top: 186.5rem;
+  }
+  .sec-8 .vipdiv1 .vipgroup2 :nth-child(7) {
+    left: 6rem;
+    top: 189.5rem;
+  }
+  .sec-8 .whatdiv {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-8 .whatdiv img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 384px;
+  }
+  .sec-8 .whatdiv h2 {
+    top: 212rem;
+    left: 1rem;
+    font-size: 16px;
+    width: 350px;
+  }
+  .sec-8 .whatdiv button {
+    top: 216rem;
+    left: 0.3rem;
+  }
+  .sec-8 .whatdiv :nth-child(4) {
+    top: 216rem;
+    left: 14.3rem;
+  }
+  .sec-8 .readnews {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-8 .readnews h2 {
+    font-size: 19px;
+    padding-left: 3rem;
+  }
+  .sec-8 .readnews .readournews1 {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .sec-8 .readnews .readournews1 .containent {
+    padding-top: 20px;
+  }
+  .sec-8 .ournews {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-8 .ournews .cleanprog {
+    padding-left: 2rem;
+  }
+  .sec-8 .ournews .cleanprog h2 {
+    font-size: 18px;
+  }
+  .sec-8 .ournews .cleanprog img {
+    width: 100px;
+  }
+  .sec-8 .ournews .boreddiv {
+    flex-direction: column;
+  }
+  .sec-8 .ournews .boreddiv .div21 {
+    width: 100%;
+  }
+  .sec-8 .ournews .boreddiv .div21 .news {
+    padding-top: 45px;
+  }
+  .sec-8 .ournews .boreddiv .div21 .news h2 {
+    font-size: 20px;
+  }
+  .sec-8 .ournews .boreddiv .div21 .tyydiv .nonediv h3 {
+    font-size: 17px;
+    width: 200px;
+  }
+  .sec-8 .ournews .boreddiv .div21 .tyydiv .nonediv img {
+    width: 32px;
+    height: 32px;
+  }
+  footer .footerdiv {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  footer .footerdiv .class4 img {
+    width: 80px;
+    height: 32px;
+    margin-right: 0px;
+  }
+  footer .footerdiv .divli1 {
+    padding-left: 20px;
+  }
+  footer .footerdiv .divli1 ul li {
+    font-size: 9px;
+  }
+  footer .footerdiv .maindiv5 {
+    padding: 0px;
+    padding-left: 40px;
+    position: absolute;
+    top: 406rem;
+  }
+  footer .footerdiv .maindiv5 h2 {
+    font-size: 18px;
+  }
+  footer .footerdiv .maindiv5 .maindiv6 {
+    flex-direction: column;
+  }
+  footer .footerdiv .maindiv5 .maindiv6 button {
+    width: 200px;
+  }
+  .sec-9 {
+    width: 100%;
+  }
+  .sec-9 .div30 {
+    flex-direction: column;
+  }
+  .sec-9 .div30 .newscontent {
+    padding-left: 0px;
+  }
+  .sec-9 .div30 .newscontent .newstab {
+    padding-left: 50px;
+  }
+  .sec-9 .div30 .newscontent .newscont {
+    padding-left: 20px;
+  }
+  .sec-9 .div30 .newscontent .newscont h1 {
+    font-size: 20px;
+  }
+  .sec-9 .div30 .newscontent .newscont p {
+    width: 350px;
+  }
+  .sec-9 .div30 .newsdiv1 {
+    width: 100%;
+  }
+  .sec-9 .div30 .newsdiv1 .whatchnews {
+    flex-direction: column;
+    padding-left: 80px;
+  }
+  .sec-9 .div30 .newsdiv1 .whatchnews .pataradiv h3 {
+    font-size: 15px;
+    width: 200px;
+  }
+  .sec-9 .div30 .newsdiv1 .whatchnews .pataradiv p {
+    width: 150px;
+  }
+  .sec-10 {
+    margin-left: 0px;
+    margin-top: 1200px;
+  }
+  .sec-10 .recnetnews {
+    padding-left: 40px;
+  }
+  .sec-10 .recnetnews h2 {
+    font-size: 20px;
+    text-align: left;
+  }
+  .sec-10 .recnetnews p {
+    margin-left: 0px;
+    text-align: left;
+    width: 300px;
+  }
+  .sec-10 .readnews {
+    margin: 0px;
+  }
+  .sec-10 .readnews h2 {
+    font-size: 19px;
+    padding-left: 3rem;
+  }
+  .sec-10 .readnews .readournews1 {
+    flex-direction: column;
+    margin-left: 1rem;
+  }
+  .sec-10 .readnews .readournews1 .containent {
+    padding-top: 20px;
+  }
+  .sec-10 .ournews {
+    margin: 0px;
+    margin-top: 96px;
+  }
+  .sec-10 .ournews .cleanprog {
+    padding-left: 2rem;
+  }
+  .sec-10 .ournews .cleanprog h2 {
+    font-size: 18px;
+  }
+  .sec-10 .ournews .cleanprog img {
+    width: 100px;
+  }
+  .sec-10 .ournews .boreddiv {
+    flex-direction: column;
+  }
+  .sec-10 .ournews .boreddiv .div21 {
+    width: 100%;
+  }
+  .sec-10 .ournews .boreddiv .div21 .news {
+    padding-top: 45px;
+  }
+  .sec-10 .ournews .boreddiv .div21 .news h2 {
+    font-size: 20px;
+  }
+  .sec-10 .ournews .boreddiv .div21 .tyydiv .nonediv h3 {
+    font-size: 17px;
+    width: 200px;
+  }
+  .sec-10 .ournews .boreddiv .div21 .tyydiv .nonediv img {
+    width: 32px;
+    height: 32px;
+  }
+  footer .footerdiv {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  footer .footerdiv .class4 img {
+    width: 80px;
+    height: 32px;
+    margin-right: 0px;
+  }
+  footer .footerdiv .divli1 {
+    padding-left: 20px;
+  }
+  footer .footerdiv .divli1 ul li {
+    font-size: 9px;
+  }
+  footer .footerdiv .maindiv7 {
+    padding: 0px;
+    padding-left: 40px;
+    position: absolute;
+    top: 298rem;
+  }
+  footer .footerdiv .maindiv7 h2 {
+    font-size: 18px;
+  }
+  footer .footerdiv .maindiv7 .maindiv8 {
+    flex-direction: column;
+  }
+  footer .footerdiv .maindiv7 .maindiv8 button {
+    width: 200px;
+  }
+  .sec-11 {
+    width: 100%;
+  }
+  .sec-11 .contact {
+    padding-left: 0px;
+    flex-direction: column;
+  }
+  .sec-11 .contact .idk24 .contactus {
+    padding-left: 30px;
+  }
+  .sec-11 .contact .idk24 .letscontact {
+    margin-bottom: 10px;
+    padding: 0px;
+  }
+  .sec-11 .contact .idk24 .letscontact h1 {
+    font-size: 20px;
+    width: 400px;
+  }
+  .sec-11 .contact .idk24 .letscontact p {
+    width: 300px;
+    padding-left: 20px;
+  }
+  .sec-11 .contact .contac1 {
+    padding-left: 20px;
+  }
+  .sec-11 .contact .contac1 .contact2 {
+    margin-bottom: 6px;
+  }
+  .sec-11 .contact .contac1 .contact2 h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .sec-11 .contact .contac1 .meil {
+    margin-bottom: 6px;
+  }
+  .sec-11 .contact .contac1 .meil h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .sec-11 .contact .contac1 .meil1 {
+    margin-bottom: 6px;
+  }
+  .sec-11 .contact .contac1 .meil1 h2 {
+    font-size: 20px;
+    margin-bottom: 0px;
+  }
+  .sec-11 .contact .contac1 .meil1 p {
+    width: 400px;
+  }
+  .sec-12 {
+    margin-left: 0px;
+  }
+  .sec-12 .logindiv .logindiv1 input {
+    width: 100%;
+  }
+  .sec-12 .logindiv .logindiv2 input {
+    width: 100%;
+  }
+  .sec-12 .logindiv .textarea1 textarea {
+    width: 100%;
+  }
+  .sec-12 .logindiv button {
+    margin-left: 110px;
+  }
+  .sec-12 .logindiv button:hover {
+    background-color: #00BFFF;
+  }
+  .sec00 img {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .footer1 .footerdiv1 {
+    padding: 0px;
+    padding-top: 20px;
+  }
+  .footer1 .footerdiv1 .class41 img {
+    width: 80px;
+    height: 32px;
+    margin-right: 0px;
+  }
+  .footer1 .footerdiv1 .divli12 {
+    padding-left: 20px;
+  }
+  .footer1 .footerdiv1 .divli12 ul li {
+    font-size: 9px;
+  }
+  .footer1 .footerdiv1 .maindiv24 {
+    padding: 0px;
+    padding-left: 40px;
+    position: absolute;
+    top: 133rem;
+  }
+  .footer1 .footerdiv1 .maindiv24 h2 {
+    font-size: 18px;
+  }
+  .footer1 .footerdiv1 .maindiv24 .maindiv10 {
+    flex-direction: column;
+  }
+  .footer1 .footerdiv1 .maindiv24 .maindiv10 button {
+    width: 200px;
+  }
+}/*# sourceMappingURL=global.css.map */
