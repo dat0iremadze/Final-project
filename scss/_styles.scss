@@ -1,0 +1,3418 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+body {
+    width: 100%;
+}
+
+.navbar {
+    background-color: #fff;
+    font-family: "ALK Life", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+}
+
+.navbar img {
+    width: 130px;
+    height: 45px;
+    margin-left: 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links button {
+    padding: 12px 32px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--primary-text, #1D2130);
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nav-links li {
+    margin-right: 25px;
+    padding-top: 15px;
+}
+
+.nav-links li a {
+    color: var(--secondary-text, #525560);
+    font-family: "ALK Life", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 814px) {
+    .nav-links {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #FFF;
+        z-index: 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon:hover {
+        background-color: #555;
+        border-radius: 4px;
+    }
+
+    #menu-toggle:checked + .menu-icon {
+        background-color: #555;
+        border-radius: 4px;
+    }
+
+    #menu-toggle:checked + .menu-icon::before {
+        content: "\00d7";
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    /* Hide the checkbox after clicking it */
+    #menu-toggle:checked {
+        display: none;
+    }
+}
+
+section {
+    .firstdiv {
+        img {
+            position: relative;
+            width: 1500px;
+            height: 735px;
+            margin-top: 10px;
+        }
+        h2 {
+            font-family: "ALK Life", sans-serif;
+            @include h22;
+        }
+        .but2 {
+            position: absolute;
+            color: var(--primary-text, #1D2130);
+            font-family: "ALK Life", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            padding: 16px 32px;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            gap: 10px;
+            border-radius: 4px;
+            background: #FFF;
+            -webkit-backdrop-filter: blur(40px);
+                    backdrop-filter: blur(40px);
+            right:80%;
+            top: 70%;
+        }
+        .div2 {
+            position:absolute ;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            top: 70%;
+            left: 25%;
+            img {
+                width: 24px;
+                height: 24px;
+                margin-right: 20px;
+            }
+            p {
+                margin-top: 10px;
+                color: #FFF;
+                text-align: right;
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+            }
+        }
+        .div3 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            position: absolute;
+            top: 97.4%;
+            img {
+                width: 861px;
+                height: 1px;
+                background: #E5E5E5;
+                -webkit-backdrop-filter: blur(15px);
+                        backdrop-filter: blur(15px);
+            }
+            p {
+                color: #FFF;
+                font-family: "ALK Life", sans-serif;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                margin-left: 30px;
+                margin-right: 30px;
+            }
+        }
+        
+    }
+    
+}
+
+.sec2 {
+    .secondarydiv {
+        .secdiv {
+            margin-top: 167.5px;
+            margin-left: 110px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-bottom: 32px;
+            img {
+                width: 72px;
+                height: 1px;
+                stroke-width: 2px;
+                stroke: var(--primary-text, #1D2130);
+                margin-right: 24px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+        }
+        .mindiv {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            .idkdiv1 {
+                margin-left: 207px;
+                h2 {
+                    width: 607px;
+                    color: var(--primary-text, #1D2130);
+                    /* H2 */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%; /* 57.6px */
+                    margin-bottom: 32px;
+                }
+                p {
+                    width: 608px;
+                    color: var(--secondary-text, #525560);
+                    /* Paragraph */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+            .chimp1 {
+                margin-left: 96px;
+                img {
+                    width: 480px;
+                    height: 578.341px;
+                    border-radius: 12px;
+                }
+            }
+        }
+        .butt1 {
+            button {
+                margin-top: 48px;
+                margin-left: 207px;
+                font-family: "ALK Life", sans-serif;
+                padding: 16px 32px;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                gap: 10px;
+                border-radius: 4px;
+                background: var(--green-primary, #00FF00);
+                -webkit-backdrop-filter: blur(40px);
+                        backdrop-filter: blur(40px);
+            }
+        }
+        .areadiv {
+            margin-top: 126.34px;
+            h2 {
+                @include arre;
+                margin-bottom: 33.51px;
+            }
+            .justdiv {
+                img {
+                    width: 142.358px;
+                    height: 45px;
+                    margin-left: 96.3px;
+                }
+            }
+        }
+        
+    }
+}
+
+.sec3 {
+    margin-top: 161.51px;
+    background: var(--green-tertiary, #EFF7F2);
+    width: 100%;
+    .thirddiv {
+        padding-top: 96px;
+        .divv1 {
+            margin-bottom: 32px;
+            margin-left: 110px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            img {
+                width: 72px;
+                height: 2px;
+                stroke-width: 2px;
+                stroke: var(--primary-text, #1D2130);
+                margin-right: 24px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-size: 16px;
+                font-family: "ALK Life", sans-serif;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+            }
+        }
+        .opendiv {
+            margin-left: 207px;
+            h2{
+                width: 608px;
+                @include hh22;
+                margin-bottom: 16px;
+            }
+            p {
+                @include pp;
+            }
+            .merdiv {
+                margin-top: 32px;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                .img-1 {
+                    width: 480px;
+                    height: 658px;
+                    border-radius: 12px;
+                    margin-left: 60px;
+                }
+                .itsdiv {
+                    margin-left: 80px;
+                    .mtadiv {
+                        margin-bottom: 24px;
+                        p {
+                            width: 608px;
+                            padding-left: 55px;
+                        }
+                        .mindiv1 {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            h3 {
+                                color: var(--primary-text, #1D2130);
+                                font-family: "ALK Life", sans-serif;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                margin-left: 24px;
+                            }
+                        }
+                    }
+                    .idk2 {
+                        margin-bottom: 24px;
+                        p {
+                            width: 608px;
+                            padding-left: 55px;
+                        }
+                        .justdiv1 {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            h3 {
+                                color: var(--primary-text, #1D2130);
+                                font-family: "ALK Life", sans-serif;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                margin-left: 24px;
+                            }
+                        }
+                    }
+                    .dontdiv {
+                        margin-bottom: 24px;
+                        p {
+                            width: 608px;
+                            padding-left: 55px;
+                        }
+                        .divclass {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            h3 {
+                                color: var(--primary-text, #1D2130);
+                                font-family: "ALK Life", sans-serif;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                margin-left: 24px;
+                            }
+                        }
+                    }
+                    .mtavari {
+                        p {
+                            width: 608px;
+                            padding-left: 55px;
+                        }
+                        .arcise {
+                            display: -webkit-box;
+                            display: -ms-flexbox;
+                            display: flex;
+                            h3 {
+                                color: var(--primary-text, #1D2130);
+                                font-family: "ALK Life", sans-serif;
+                                font-size: 24px;
+                                font-style: normal;
+                                font-weight: 700;
+                                line-height: normal;
+                                margin-left: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+.sec-4 {
+    margin-top: 100px;
+    margin-left: 110px;
+    .nonclass {
+        margin-bottom: 32px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        img {
+            width: 72px;
+            height: 1px;
+        }
+        p {
+            color: var(--primary-text, #1D2130);
+            font-family: "ALK Life", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-left: 24px;
+        }
+    }
+    .indep {
+        width: 640px;
+        color: var(--primary-text, #1D2130);
+        /* H2 */
+        font-family: "ALK Life", sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 57.6px */
+        margin-left: 100px;
+        margin-bottom: 65.64px;
+    }
+    .demo {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        .indemo {
+            img {
+                position: relative;
+                width: 380px;
+                height: 421px;
+                border-radius: 12px;
+            }
+            h2 {
+                position: absolute;
+                width: 523px;
+                color: #FFF;
+                /* H3 */
+                font-family: "ALK Life", sans-serif;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 42px */
+                top: 482vh;
+                left: 19vh;
+                padding: 80px 48px 48px;
+            }
+            p {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 500vh;
+                left: 25vh;
+            }
+            button {
+                position: absolute;
+                font-family: "ALK Life", sans-serif;
+                padding: 16px 32px;
+                color: #000;
+                border-radius: 4px;
+                background: #FFF;
+                -webkit-backdrop-filter: blur(40px);
+                        backdrop-filter: blur(40px);
+                top: 539vh;
+                left: 24vh;
+            }
+        }
+        .nodiv {
+            img {
+                position: relative;
+                width: 380px;
+                height: 421px;
+                border-radius: 12px;
+            }
+            h2 {
+                position: absolute;
+                width: 315px;
+                color: #fff;
+                /* H3 */
+                font-family: "ALK Life", sans-serif;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 42px */
+                top: 482vh;
+                padding: 80px 48px 48px;
+            }
+            p {
+                position:absolute ;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 506vh;
+                left: 89vh;
+            }
+            button {
+                position: absolute;
+                border-radius: 4px;
+                font-family: "ALK Life", sans-serif;
+                padding: 16px 32px;
+                color: #000;
+                background: #FFF;
+                -webkit-backdrop-filter: blur(40px);
+                        backdrop-filter: blur(40px);
+                top: 539vh;
+                left: 89vh;
+            }
+        }
+        .child {
+            img {
+                position: relative;
+                width: 380px;
+                height: 421px;
+                border-radius: 12px;
+            }
+            h2 {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* H3 */
+                font-family: "ALK Life", sans-serif;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 42px */
+                top: 482vh;
+                padding:80px 48px 48px ;
+            }
+            p {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 503vh;
+                left: 150vh;
+            }
+            button {
+                position: absolute;
+                border-radius: 4px;
+                font-family: "ALK Life", sans-serif;
+                padding: 16px 32px;
+                color: #000;
+                background: #FFF;
+                -webkit-backdrop-filter: blur(40px);
+                        backdrop-filter: blur(40px);
+                top: 539vh;
+                left: 150vh;
+            }
+        }
+    }
+}
+
+.sec-5 {
+    margin-top: 96px;
+    .parentdiv {
+        width: 100%;
+        height: 576px;
+        background: var(--black, #0B0706);
+        .child1 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            .nondiv {
+                padding: 142px 110px;
+                h2 {
+                    width: 611px;
+                    color: #FFF;
+                    /* H2 */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%; /* 57.6px */
+                    margin-bottom: 16px;
+                }
+                p {
+                    width: 606px;
+                    color:#fff;
+                    /* Paragraph */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+            .imgg-1 {
+                padding-top: 96px;
+                padding-left: 250px;
+            }  
+        }
+        .child2 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding-left: 111px;
+            .cocu {
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                padding-left: 24px;
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+                p {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-family: "ALK Life", sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 160%; /* 25.6px */
+                    padding-left: 4px;
+                }
+            }
+        } 
+        .class2 {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            padding-top: 8px;
+            padding-left: 111px;
+            .class3 {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                padding-left: 24px;
+                img {
+                    width: 16px;
+                    height: 16px;
+                }
+                p {
+                    color: #FFF;
+                    font-size: 16px;
+                    font-family: "ALK Life", sans-serif;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 160%; /* 25.6px */
+                    padding-left: 4px;
+                }
+            }
+        } 
+    }
+    .whatdiv {
+        margin: 96px 110px;
+        img {
+            position: relative;
+            width: 1280px;
+            height: 384px;
+            border-radius: 12px;
+        }
+        h2 {
+            position: absolute;
+            width: 631px;
+            color: #FFF;
+            text-align: center;
+            /* H2 */
+            font-family: "ALK Life", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+            top: 4893px;
+            left: 435px;
+        }
+        button {
+        position: absolute;
+        padding: 16px 32px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        font-family: "ALK Life", sans-serif;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 10px;
+        border-radius: 4px;
+        background: var(--green-primary, #70C174);
+        -webkit-backdrop-filter: blur(40px);
+                backdrop-filter: blur(40px);
+        top: 5100px;
+        left: 510px;
+        }
+        :nth-child(4) {
+        position: absolute;
+        color: #1D2130;
+        padding: 16px 32px;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        gap: 10px;
+        border-radius: 4px;
+        background: #FFF;
+        -webkit-backdrop-filter: blur(40px);
+                backdrop-filter: blur(40px);
+        top: 5100px;
+        left: 800px;
+        }
+    }
+    .readnews {
+        margin-top: 96px;
+        margin-left: 110px;
+        h2 {
+            color: var(--primary-text, #1D2130);
+            font-family: "ALK Life", sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 56px */
+            margin-bottom: 48px;
+        }
+        .readournews1 {
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            .containent {
+                img {
+                    width: 302px;
+                    height: 192px;
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                }
+                h3 {
+                    width: 290px;
+                    color: var(--black, #1C1D28);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 30px */
+                    margin-bottom: 8px;
+                }
+                p {
+                    width: 290px;
+                    color: var(--secondary-text, #525560);
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+        }
+    }
+    .ournews {
+        margin-top: 96px;
+        margin-left: 110px;
+        .cleanprog {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-bottom: 48px;
+            h2 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%; /* 56px */
+            }
+            img {
+                width: 900px;
+                height: 1px;
+                padding-left: 24px;
+            }
+        }
+        .boreddiv {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            .div21 {
+                width: 628px;
+                height: 191px;
+                border-radius: 8px;
+                background: var(--green-secondary, #BEF3C0);
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                .news {
+                    padding: 32px 40px;
+                    h2 {
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 120%; /* 57.6px */
+                        font-variant: small-caps;
+                    }
+                    p {
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                    }
+                }
+                .tyydiv {
+                    padding-top: 40px;
+                    .idkclass {
+                        margin-bottom: 8px;
+                        p {
+                            color: var(--primary-text, #1D2130);
+                            font-family: "ALK Life", sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .nonediv {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        h3 {
+                            width: 381px;
+                            color: var(--primary-text, #1D2130);
+                            /* H3 */
+                            font-family: "ALK Life", sans-serif;
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%; /* 42px */
+                        }
+                        img {
+                            width: 56px;
+                            height: 56px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 402px;
+    background: var(--black, #0B0706);
+    margin-top: 96px;
+    .footerdiv {
+        padding-top: 97px;
+        padding-left: 110px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        .class4 {
+            img {
+                width: 160px;
+                height: 50px;
+                margin-right: 30px;
+            }
+        }
+        .divli1 {
+            padding-top: 17px;
+            padding-left: 40px;
+            ul {
+                li {
+                    color: #FFF;
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 25.6px */
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .maindiv1 {
+            padding-left: 110px;
+            h2 {
+                width: 440px;
+                color: #FFF;
+                font-family: "ALK Life", sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 56px */
+            }
+            .maindiv2 {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                input {
+                    width: 300px;
+                    height: 63px;
+                    border-radius: 4px;
+                    border: 1px solid rgba(235, 240, 249, 0.30);
+                    color: rgba(235, 240, 249, 0.30);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 22px 24px;
+                }
+                button {
+                height: 64px;
+                padding: 16px 32px;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                gap: 10px;
+                border-radius: 4px;
+                background: #FFF;
+                -webkit-backdrop-filter: blur(40px);
+                        backdrop-filter: blur(40px);
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+.navbar {
+    background-color: #fff;
+    font-family: "ALK Life", sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 10px;
+}
+
+.navbar img {
+    width: 130px;
+    height: 45px;
+    margin-left: 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links button {
+    padding: 12px 32px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 10px;
+    border-radius: 4px;
+    background: var(--primary-text, #1D2130);
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.nav-links li {
+    margin-right: 25px;
+    padding-top: 15px;
+}
+
+.nav-links li a {
+    color: var(--secondary-text, #525560);
+    font-family: "ALK Life", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Hide the checkbox */
+#menu-toggle {
+    display: none;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        z-index: 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 10px 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .menu-icon:hover {
+        background-color: #555;
+        border-radius: 4px;
+    }
+
+    #menu-toggle:checked + .menu-icon {
+        background-color: #555;
+        border-radius: 4px;
+    }
+
+    #menu-toggle:checked + .menu-icon::before {
+        content: "\00d7";
+    }
+
+    #menu-toggle:checked ~ .nav-links {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    /* Hide the checkbox after clicking it */
+    #menu-toggle:checked {
+        display: none;
+    }
+}
+.sec-1 {
+    margin-top: 96px;
+    margin-left: 110px;
+    .msobelidiv {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        margin-bottom: 32px;
+        img {
+            width: 72px;
+            height: 2px;
+        }
+        p {
+            color: var(--primary-text, #1D2130);
+            font-family: "ALK Life", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding-left:24px;
+        }
+    }
+    .msobeldiv1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        h2 {
+            width: 624px;
+            color: var(--primary-text, #1D2130);
+            /* H1 */
+            font-family: "ALK Life", sans-serif;
+            font-size: 56px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 67.2px */
+            padding-left: 20px;
+            
+        }
+        .minichild {
+            p {
+                width: 496px;
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 30px */
+                margin-bottom: 16px;
+                
+            }
+            :nth-child(2) {
+                width: 496px;
+                color: var(--primary-text, #1D2130);
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+            }
+        }
+    }
+}
+.section2 {
+    width: 100%;
+    margin-top: 320px;
+    .transparent1 {
+        width: 100%;
+        height: 867px;
+        background: var(--green-tertiary, #EFF7F2);
+        .ourmission {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            img {
+                width: 1280px;
+                height: 448px;
+                border-radius: 12px;
+                position: absolute;
+                top: 660px;
+                left: 110px;
+            }
+            .whatwedo {
+                padding-top: 320px;
+                padding-left: 170px;
+                P {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    margin-bottom: 16px;
+                }
+                h3 {
+                    width: 496px;
+                    color: var(--primary-text, #1D2130);
+                    /* H3 */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 150%; /* 42px */
+                    margin-bottom: 8px;
+                }
+                :nth-child(3) {
+                    width: 496px;
+                    color: var(--primary-text, #1D2130);
+                    /* Paragraph */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+        }
+        .nonidiv {
+            padding-left: 110px;
+            padding-top: 96px;
+            p {
+                padding-left: 40px;
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                margin-bottom: 49.51px;
+            }
+            .align {
+                padding-left: 20px;
+                img {
+                    width: 160px;
+                    height: 50px;
+                    margin-right: 90px;
+                }
+            }
+        }
+    }
+}
+
+.section3 {
+    margin-left: 110px;
+    margin-top: 96px;
+    .rewards {
+        h2 {
+            color: var(--primary-text, #1D2130);
+            text-align: center;
+            /* H2 */
+            font-family: "ALK Life", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+            margin-bottom: 48px;
+        }
+        .fleximg {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            .fleximg1 {
+                img {
+                    padding-left: 40px;
+                }
+                h3 {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 38.4px */
+                    padding-left: 70px;
+                }
+                h4 {
+                    color: var(--primary-text, #1D2130);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 25.6px */
+                }
+                p {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 12px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 160%; /* 19.2px */
+                    text-transform: uppercase;
+                    padding-left: 40px;
+                }
+            }
+        }
+    }
+    .journey {
+        width: 1280px;
+        height: 576px;
+        border-radius: 12px;
+        background: var(--black, #0B0706);
+        margin-top: 96px;
+        padding-left: 96px;
+        padding-top: 128px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        img {
+            width: 584px;
+            height: 420px;
+            border-radius: 12px 0px 0px 12px;
+        }
+        .journey2 {
+            .journeydiv {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                .ourdiv1{
+                    padding-right: 32px;
+                    h2 {
+                        color: #FFF;
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 160%; /* 38.4px */
+                    }
+                    p {
+                        color: #FFF;
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 12px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 160%; /* 19.*/
+                    }
+                }
+            }
+            .ourgroup {
+                margin-bottom: 30px;
+                p {
+                    color: #FFF;
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                }
+                h2 {
+                    width: 600px;
+                    color: #FFF;
+                    /* H2 */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%; /* 57.6px */
+                }
+                :nth-child(3) {
+                    width: 488.224px;
+                    color: #FFF;
+                    /* Paragraph */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+        }
+    }
+}
+
+.sec-4 {
+    margin-top: 160px;
+    margin-left: 110px;
+    .ourteam {
+        text-align: center;
+        margin-bottom: 48px;
+        h2 {
+            color: var(--primary-text, #1D2130);
+            /* H2 */
+            font-family: "ALK Life", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+        }
+        p {
+            width: 519px;
+            color: var(--secondary-text, #525560);
+            /* Paragraph */
+            font-family: "ALK Life", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+            margin-left: 440px;
+        }
+    }
+    .meetteam {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        .negativediv {
+            h3 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 32px */
+                padding-left: 30px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 19.2px */
+                opacity: 0.6000000238418579;
+                padding-left: 60px;
+                margin-bottom: 16px;
+            }
+            .dontidk {
+                margin-bottom: 50px;
+                padding-left: 60px;
+                img {
+                    padding-left: 20px;
+                }
+            }
+        }
+        .negativediv1 {
+            h3 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 32px */
+                padding-left: 60px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 19.2px */
+                opacity: 0.6000000238418579;
+                padding-left: 80px;
+                margin-bottom: 16px;
+            }
+            .dontidk {
+                padding-left: 60px;
+                img {
+                    padding-left: 20px;
+                }
+            }
+        }
+        .negativediv2 {
+            h3 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 32px */
+                padding-left: 60px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 19.2px */
+                opacity: 0.6000000238418579;
+                padding-left: 70px;
+                margin-bottom: 16px;
+            }
+            .dontidk {
+                padding-left: 60px;
+                img {
+                    padding-left: 20px;
+                }
+            }
+        }
+        .negativediv3 {
+            h3 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 32px */
+                padding-left: 60px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 19.2px */
+                opacity: 0.6000000238418579;
+                padding-left: 60px;
+                margin-bottom: 16px;
+            }
+            .dontidk {
+                padding-left: 60px;
+                img {
+                    padding-left: 20px;
+                }
+            }
+        }
+        .negativediv4 {
+            h3 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 32px */
+                padding-left: 68px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 19.2px */
+                opacity: 0.6000000238418579;
+                padding-left: 77px;
+                margin-bottom: 16px;
+            }
+            .dontidk {
+                padding-left: 60px;
+                img {
+                    padding-left: 20px;
+                }
+            }
+        }
+        .negativediv5 {
+            h3 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 32px */
+                padding-left: 80px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 19.2px */
+                opacity: 0.6000000238418579;
+                padding-left: 110px;
+                margin-bottom: 16px;
+            }
+            .dontidk {
+                padding-left: 60px;
+                img {
+                    padding-left: 20px;
+                }
+            }
+        }
+        .negativediv6 {
+            h3 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 32px */
+                padding-left: 60px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 19.2px */
+                opacity: 0.6000000238418579;
+                padding-left: 80px;
+                margin-bottom: 16px;
+            }
+            .dontidk {
+                padding-left: 60px;
+                img {
+                    padding-left: 20px;
+                }
+            }
+        }
+        .negativediv7 {
+            h3 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 32px */
+                padding-left: 60px;
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 160%; /* 19.2px */
+                opacity: 0.6000000238418579;
+                padding-left: 80px;
+                margin-bottom: 16px;
+            }
+            .dontidk {
+                padding-left: 60px;
+                img {
+                    padding-left: 20px;
+                }
+            }
+        }
+    }
+    .whatdiv {
+        margin-top: 96px;
+        img {
+            position: relative;
+            width: 1280px;
+            height: 384px;
+            border-radius: 12px;
+        }
+        h2 {
+            position: absolute;
+            width: 631px;
+            color: #FFF;
+            text-align: center;
+            /* H2 */
+            font-family: "ALK Life", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+            top: 4110px;
+            left: 435px;
+        }
+        button {
+            position: absolute;
+            padding: 16px 32px;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            font-family: "ALK Life", sans-serif;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            gap: 10px;
+            border-radius: 4px;
+            background: var(--green-primary, #70C174);
+            -webkit-backdrop-filter: blur(40px);
+                    backdrop-filter: blur(40px);
+            top: 4310px;
+            left: 510px;
+        }
+        :nth-child(4) {
+           position: absolute;
+           color: #1D2130;
+           padding: 16px 32px;
+           -webkit-box-pack: center;
+               -ms-flex-pack: center;
+                   justify-content: center;
+           -webkit-box-align: center;
+               -ms-flex-align: center;
+                   align-items: center;
+           gap: 10px;
+           border-radius: 4px;
+           background: #FFF;
+           -webkit-backdrop-filter: blur(40px);
+                   backdrop-filter: blur(40px);
+           top: 4310px;
+           left: 800px;
+        }
+    }
+    .readnews {
+        margin-top: 96px;
+        h2 {
+            color: var(--primary-text, #1D2130);
+            font-family: "ALK Life", sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 56px */
+            margin-bottom: 48px;
+        }
+        .readournews1 {
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            .containent {
+                img {
+                    width: 302px;
+                    height: 192px;
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                }
+                h3 {
+                    width: 290px;
+                    color: var(--black, #1C1D28);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 30px */
+                    margin-bottom: 8px;
+                }
+                p {
+                    width: 290px;
+                    color: var(--secondary-text, #525560);
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+        }
+    }
+    .ournews {
+        margin-top: 96px;
+        .cleanprog {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-bottom: 48px;
+            h2 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%; /* 56px */
+            }
+            img {
+                width: 900px;
+                height: 1px;
+                padding-left: 24px;
+            }
+        }
+        .boreddiv {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            .div21 {
+                width: 628px;
+                height: 191px;
+                border-radius: 8px;
+                background: var(--green-secondary, #BEF3C0);
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                .news {
+                    padding: 32px 40px;
+                    h2 {
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 120%; /* 57.6px */
+                        font-variant: small-caps;
+                    }
+                    p {
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                    }
+                }
+                .tyydiv {
+                    padding-top: 40px;
+                    .idkclass {
+                        margin-bottom: 8px;
+                        p {
+                            color: var(--primary-text, #1D2130);
+                            font-family: "ALK Life", sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .nonediv {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        h3 {
+                            width: 381px;
+                            color: var(--primary-text, #1D2130);
+                            /* H3 */
+                            font-family: "ALK Life", sans-serif;
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%; /* 42px */
+                        }
+                        img {
+                            width: 56px;
+                            height: 56px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 402px;
+    background: var(--black, #0B0706);
+    margin-top: 96px;
+    .footerdiv {
+        padding-top: 97px;
+        padding-left: 110px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        .class4 {
+            img {
+                width: 160px;
+                height: 50px;
+                margin-right: 30px;
+            }
+        }
+        .divli1 {
+            padding-top: 17px;
+            padding-left: 40px;
+            ul {
+                li {
+                    color: #FFF;
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 25.6px */
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .maindiv3 {
+            padding-left: 110px;
+            h2 {
+                width: 440px;
+                color: #FFF;
+                font-family: "ALK Life", sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 56px */
+            }
+            .maindiv4 {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                input {
+                    width: 300px;
+                    height: 63px;
+                    border-radius: 4px;
+                    border: 1px solid rgba(235, 240, 249, 0.30);
+                    color: rgba(235, 240, 249, 0.30);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 22px 24px;
+                }
+                button {
+                height: 64px;
+                padding: 16px 32px;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                gap: 10px;
+                border-radius: 4px;
+                background: #FFF;
+                -webkit-backdrop-filter: blur(40px);
+                        backdrop-filter: blur(40px);
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+.sec-6 {
+    margin: 96px 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    img {
+        width: 480px;
+        height: 384px;
+        border-radius: 12px;
+    }
+    .parentdiv1 {
+        .shesavalidiv {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-bottom: 32px;
+            img {
+                width: 72px;
+                height: 2px;
+                stroke-width: 2px;
+                stroke: var(--primary-text, #1D2130);
+            }
+            p {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                padding-left: 24px;
+            }
+        }
+        .sashualodiv1 {
+            padding-left: 90px;
+            h1 {
+                width: 461px;
+                color: var(--primary-text, #1D2130);
+                /* H1 */
+                font-family: "ALK Life", sans-serif;
+                font-size: 56px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 120%; /* 67.2px */
+            }
+            p {
+                width: 594px;
+                color: var(--secondary-text, #525560);
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+            }
+        }
+    }
+}
+
+.sec-7 {
+    margin-top: 96px;
+    .parentdiv2 {
+        width: 100%;
+        height: 574px;
+        background: var(--green-tertiary, #EFF7F2);
+        h2 {
+            color: var(--primary-text, #1D2130);
+            /* H2 */
+            font-family: "ALK Life", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+            padding-left: 110px;
+            padding-top: 96px;
+        }
+        .miniparent {
+            padding-left: 110px;
+            padding-top: 100px;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            .div33 {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+                .dividk1 {
+                    padding-left: 24px;
+                    h3 {
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 24px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                    }
+                    p {
+                        width: 332px;
+                        color: var(--secondary-text, #525560);
+                        /* Paragraph small */
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 160%; /* 22.4px */
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec-8 {
+    margin: 96px 110px;
+    .vipdiv {
+        margin-bottom: 64px;
+        p {
+            color: var(--primary-text, #1D2130);
+            font-family: "ALK Life", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 16px;
+        }
+        h2 {
+            width: 700px;
+            color: var(--primary-text, #1D2130);
+            /* H2 */
+            font-family: "ALK Life", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+            text-align: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-left: 300px;
+        }
+    }
+    .vipdiv1 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        .vipgroup {
+            img {
+                position: relative;
+                width: 400px;
+                height: 440px;
+                border-radius: 12px;
+            }
+            h3 {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* H3 */
+                font-family: "ALK Life", sans-serif;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 42px */
+                top: 1600px;
+                left: 160px;
+            }
+            p {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1670px;
+                left: 160px;
+            }
+            :nth-child(4) {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1710px;
+            }
+            :nth-child(5) {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1750px;
+            }
+            :nth-child(6) {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1790px;
+            }
+            :nth-child(7) {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1830px;
+            }
+        }
+        .vipgroup1 {
+            img {
+                position: relative;
+                width: 400px;
+                height: 440px;
+                border-radius: 12px;
+            }
+            h3 {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* H3 */
+                font-family: "ALK Life", sans-serif;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 42px */
+                top: 1600px;
+                left: 630px;
+            }
+            p {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1670px;
+                left: 630px;
+            }
+            :nth-child(4) {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1710px;
+                left: 630px;
+            }
+            :nth-child(5) {
+                position: absolute;
+                width: 315px;
+                color:#FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1750px;
+                left: 630px;
+            }
+            :nth-child(6) {
+                position: absolute;
+                width: 315px;
+                color:#FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1790px;
+                left: 630px;
+            }
+            :nth-child(7) {
+                position: absolute;
+                width: 315px;
+                color:#FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1830px;
+                left: 630px;
+            }
+        }
+        .vipgroup2 {
+            img {
+                position: relative;
+                width: 400px;
+                height: 440px;
+                border-radius: 12px;
+            }
+            h3 {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* H3 */
+                font-family: "ALK Life", sans-serif;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%; /* 42px */
+                top: 1600px;
+                left: 1100px;
+            }
+            p {
+                position: absolute;
+                width: 315px;
+                color:#FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1670px;
+                left: 1100px;
+            }
+            :nth-child(4) {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1710px;
+                left: 1100px;
+            }
+            :nth-child(5) {
+                position: absolute;
+                width: 315px;
+                color:#FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1750px;
+                left: 1100px;
+            }
+            :nth-child(6) {
+                position: absolute;
+                width: 315px;
+                color:#FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1790px;
+                left: 1100px;
+            }
+            :nth-child(7) {
+                position: absolute;
+                width: 315px;
+                color: #FFF;
+                /* Paragraph */
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                top: 1830px;
+                left: 1100px;
+            }
+        }
+    }
+    .whatdiv {
+        margin-top: 96px;
+        img {
+            position: relative;
+            width: 1280px;
+            height: 384px;
+            border-radius: 12px;
+        }
+        h2 {
+            position: absolute;
+            width: 631px;
+            color: #FFF;
+            text-align: center;
+            /* H2 */
+            font-family: "ALK Life", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+            top: 2130px;
+            left: 435px;
+        }
+        button {
+            position: absolute;
+            padding: 16px 32px;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            font-family: "ALK Life", sans-serif;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            gap: 10px;
+            border-radius: 4px;
+            background: var(--green-primary, #70C174);
+            -webkit-backdrop-filter: blur(40px);
+                    backdrop-filter: blur(40px);
+            top: 2360px;
+            left: 510px;
+        }
+        :nth-child(4) {
+           position: absolute;
+           color: #1D2130;
+           padding: 16px 32px;
+           -webkit-box-pack: center;
+               -ms-flex-pack: center;
+                   justify-content: center;
+           -webkit-box-align: center;
+               -ms-flex-align: center;
+                   align-items: center;
+           gap: 10px;
+           border-radius: 4px;
+           background: #FFF;
+           -webkit-backdrop-filter: blur(40px);
+                   backdrop-filter: blur(40px);
+           top: 2360px;
+           left: 800px;
+        }
+    }
+    .readnews {
+        margin-top: 96px;
+        h2 {
+            color: var(--primary-text, #1D2130);
+            font-family: "ALK Life", sans-serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 140%; /* 56px */
+            margin-bottom: 48px;
+        }
+        .readournews1 {
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            .containent {
+                img {
+                    width: 302px;
+                    height: 192px;
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                }
+                h3 {
+                    width: 290px;
+                    color: var(--black, #1C1D28);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 30px */
+                    margin-bottom: 8px;
+                }
+                p {
+                    width: 290px;
+                    color: var(--secondary-text, #525560);
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            } 
+        }
+    }
+    .ournews {
+        margin-top: 96px;
+        .cleanprog {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-bottom: 48px;
+            h2 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%; /* 56px */
+            }
+            img {
+                width: 900px;
+                height: 1px;
+                padding-left: 24px;
+            }
+        }
+        .boreddiv {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            .div21 {
+                width: 628px;
+                height: 191px;
+                border-radius: 8px;
+                background: var(--green-secondary, #BEF3C0);
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                .news {
+                    padding: 32px 40px;
+                    h2 {
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 120%; /* 57.6px */
+                        font-variant: small-caps;
+                    }
+                    p {
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                    }
+                }
+                .tyydiv {
+                    padding-top: 40px;
+                    .idkclass {
+                        margin-bottom: 8px;
+                        p {
+                            color: var(--primary-text, #1D2130);
+                            font-family: "ALK Life", sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .nonediv {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        h3 {
+                            width: 381px;
+                            color: var(--primary-text, #1D2130);
+                            /* H3 */
+                            font-family: "ALK Life", sans-serif;
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%; /* 42px */
+                        }
+                        img {
+                            width: 56px;
+                            height: 56px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 402px;
+    background: var(--black, #0B0706);
+    margin-top: 96px;
+    .footerdiv {
+        padding-top: 97px;
+        padding-left: 110px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        .class4 {
+            img {
+                width: 160px;
+                height: 50px;
+                margin-right: 30px;
+            }
+        }
+        .divli1 {
+            padding-top: 17px;
+            padding-left: 40px;
+            ul {
+                li {
+                    color: #FFF;
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 25.6px */
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .maindiv5 {
+            padding-left: 110px;
+            h2 {
+                width: 440px;
+                color: #FFF;
+                font-family: "ALK Life", sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 56px */
+            }
+            .maindiv6 {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                input {
+                    width: 300px;
+                    height: 63px;
+                    border-radius: 4px;
+                    border: 1px solid rgba(235, 240, 249, 0.30);
+                    color: rgba(235, 240, 249, 0.30);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 22px 24px;
+                }
+                button {
+                height: 64px;
+                padding: 16px 32px;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                gap: 10px;
+                border-radius: 4px;
+                background: #FFF;
+                -webkit-backdrop-filter: blur(40px);
+                        backdrop-filter: blur(40px);
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+.sec-9 {
+    width: 100%;
+    height: 768px;
+    background: var(--green-tertiary, #EFF7F2);
+    .div30 {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+        .newscontent {
+            padding: 96px 110px;
+            .newstab {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                margin-bottom: 32px;
+                img {
+                    width: 72px;
+                    height: 2px;
+                }
+                p {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    padding-left: 24px;
+                }
+            }
+            .newscont {
+                padding-left: 90px;
+                h1 {
+                    width: 496px;
+                    color: var(--primary-text, #1D2130);
+                    /* H1 */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 56px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%; /* 67.2px */
+                    margin-bottom: 16px;
+                }
+                p {
+                    width: 496px;
+                    color: var(--secondary-text, #525560);
+                    /* Paragraph */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                    margin-bottom: 32px;
+                }
+                button {
+                    padding: 16px 32px;
+                    -webkit-box-pack: center;
+                        -ms-flex-pack: center;
+                            justify-content: center;
+                    -webkit-box-align: center;
+                        -ms-flex-align: center;
+                            align-items: center;
+                    gap: 10px;
+                    border-radius: 4px;
+                    background: var(--green-primary, #70C174);
+                    -webkit-backdrop-filter: blur(40px);
+                            backdrop-filter: blur(40px);
+                    color: #FFF;
+                    text-align: right;
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                }
+                button:hover {
+                    background-color:	#40E0D0;
+                }
+            }
+        }
+        .newsdiv1 {
+            width: 592px;
+            height: 576px;
+            border-radius: 12px;
+            background: #FFF;
+            margin-top: 96px;
+            .whatchnews {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -ms-flex-pack: distribute;
+                    justify-content: space-around;
+                padding-top: 24px;
+                img {
+                    width: 192px;
+                    height: 160px;
+                    border-radius: 8px;
+                }
+                .pataradiv {
+                    h3 {
+                        width: 296px;
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 150%; /* 30px */
+                        margin-bottom: 7px;
+                    }
+                    p {
+                        width: 296px;
+                        color: var(--secondary-text, #525560);
+                        /* Paragraph */
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 160%; /* 25.6px */
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sec-10 {
+    margin: 96px 110px;
+    .recnetnews {
+        h2 {
+            color: var(--primary-text, #1D2130);
+            text-align: center;
+            /* H2 */
+            font-family: "ALK Life", sans-serif;
+            font-size: 48px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 120%; /* 57.6px */
+        }
+        p {
+            width: 450px;
+            color: var(--secondary-text, #525560);
+            text-align: center;
+            /* Paragraph */
+            font-family: "ALK Life", sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 160%; /* 25.6px */
+            margin-left: 420px;
+        }
+    }
+    .readnews {
+        margin-top: 30px;
+        .readournews1 {
+            display:-webkit-box;
+            display:-ms-flexbox;
+            display:flex;
+            -webkit-box-pack: justify;
+                -ms-flex-pack: justify;
+                    justify-content: space-between;
+            .containent {
+                img {
+                    width: 302px;
+                    height: 192px;
+                    border-radius: 8px;
+                    margin-bottom: 16px;
+                }
+                h3 {
+                    width: 290px;
+                    color: var(--black, #1C1D28);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 20px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%; /* 30px */
+                    margin-bottom: 8px;
+                }
+                p {
+                    width: 290px;
+                    color: var(--secondary-text, #525560);
+                    font-family: Roboto;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            } 
+        }
+    }
+    .ournews {
+        margin-top: 96px;
+        .cleanprog {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            margin-bottom: 48px;
+            h2 {
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 140%; /* 56px */
+            }
+            img {
+                width: 900px;
+                height: 1px;
+                padding-left: 24px;
+            }
+        }
+        .boreddiv {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+            .div21 {
+                width: 628px;
+                height: 191px;
+                border-radius: 8px;
+                background: var(--green-secondary, #BEF3C0);
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                .news {
+                    padding: 32px 40px;
+                    h2 {
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 48px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: 120%; /* 57.6px */
+                        font-variant: small-caps;
+                    }
+                    p {
+                        color: var(--primary-text, #1D2130);
+                        font-family: "ALK Life", sans-serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 500;
+                        line-height: normal;
+                        letter-spacing: 2px;
+                        text-transform: uppercase;
+                    }
+                }
+                .tyydiv {
+                    padding-top: 40px;
+                    .idkclass {
+                        margin-bottom: 8px;
+                        p {
+                            color: var(--primary-text, #1D2130);
+                            font-family: "ALK Life", sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: normal;
+                            letter-spacing: 2px;
+                            text-transform: uppercase;
+                        }
+                    }
+                    .nonediv {
+                        display: -webkit-box;
+                        display: -ms-flexbox;
+                        display: flex;
+                        h3 {
+                            width: 381px;
+                            color: var(--primary-text, #1D2130);
+                            /* H3 */
+                            font-family: "ALK Life", sans-serif;
+                            font-size: 28px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 150%; /* 42px */
+                        }
+                        img {
+                            width: 56px;
+                            height: 56px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    height: 402px;
+    background: var(--black, #0B0706);
+    margin-top: 96px;
+    .footerdiv {
+        padding-top: 97px;
+        padding-left: 110px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        .class4 {
+            img {
+                width: 160px;
+                height: 50px;
+                margin-right: 30px;
+            }
+        }
+        .divli1 {
+            padding-top: 17px;
+            padding-left: 40px;
+            ul {
+                li {
+                    color: #FFF;
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 25.6px */
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .maindiv7 {
+            padding-left: 110px;
+            h2 {
+                width: 440px;
+                color: #FFF;
+                font-family: "ALK Life", sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 56px */
+            }
+            .maindiv8 {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                input {
+                    width: 300px;
+                    height: 63px;
+                    border-radius: 4px;
+                    border: 1px solid rgba(235, 240, 249, 0.30);
+                    color: rgba(235, 240, 249, 0.30);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 22px 24px;
+                }
+                button {
+                height: 64px;
+                padding: 16px 32px;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                gap: 10px;
+                border-radius: 4px;
+                background: #FFF;
+                -webkit-backdrop-filter: blur(40px);
+                        backdrop-filter: blur(40px);
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+.sec-11 {
+    width: 100%;
+    height: 600px;
+    background: var(--off-white, #EBF0F9);
+    .contact {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        padding: 96px 110px;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        .idk24 {
+            .contactus {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                margin-bottom: 32px;
+                img {
+                    width: 72px;
+                    height: 2px;
+                }
+                p {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 2px;
+                    text-transform: uppercase;
+                    padding-left: 24px;
+                }
+            }
+            .letscontact {
+                padding-left: 90px;
+                h1 {
+                    width: 480.451px;
+                    color: var(--b, #1D2130);
+                    /* H1 */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 56px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 120%; /* 67.2px */
+                    margin-bottom: 16px;
+                }
+                p {
+                    width: 480.451px;
+                    color: var(--b, #1D2130);
+                    /* Paragraph */
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 160%; /* 25.6px */
+                }
+            }
+        }
+        .contac1 {
+            .contact2 {
+                margin-bottom: 48px;
+                h2 {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 38.4px */
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; /* 175% */
+                }
+            }
+            .meil {
+                margin-bottom: 48px;
+                h2 {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 38.4px */
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; /* 175% */
+                }
+            }
+            .meil1 {
+                margin-bottom: 32px;
+                h2 {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 38.4px */
+                    margin-bottom: 10px;
+                }
+                p {
+                    color: var(--primary-text, #1D2130);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; /* 175% */
+                }
+            }
+            .socialimg {
+                img {
+                    padding-right: 20px;
+                }
+            }
+        }
+    }
+}
+
+.sec-12 {
+    margin: 96px 366px;
+    .logindiv {
+        .logindiv1 {
+            margin-bottom: 20px;
+            input {
+                width: 350px;
+                height: 64px;
+                border-radius: 4px;
+                border: 3px solid rgba(235, 240, 249, 0.30);
+                font-family: "ALK Life", sans-serif;
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 160%; /* 19.2px */
+                padding: 5px 25px;
+                opacity: 0.6;
+            }
+        }
+        .logindiv2 {
+            margin-bottom: 55px;
+            input {
+                width: 350px;
+                height: 64px;
+                border-radius: 4px;
+                border: 3px solid rgba(235, 240, 249, 0.30);
+                font-family: "ALK Life", sans-serif;
+                color: var(--primary-text, #1D2130);
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 160%; /* 19.2px */
+                padding: 5px 25px;
+                opacity: 0.6;
+            }
+        }
+        .textarea1 {
+            margin-bottom: 32px;
+            textarea {
+                width: 703px;
+                height: 156px;
+                border-radius: 4px;
+                border: 1px solid var(--border, #E5E5E5);
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 160%; /* 25.6px */
+                padding: 5px 25px;
+            }
+        }
+        button {
+            display: -webkit-inline-box;
+            display: -ms-inline-flexbox;
+            display: inline-flex;
+            padding: 16px 32px;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            gap: 10px;
+            border-radius: 4px;
+            background: var(--green-primary, #70C174);
+            -webkit-backdrop-filter: blur(40px);
+                    backdrop-filter: blur(40px);
+            margin-left: 294px;
+            color: #FFF;
+            font-family: "ALK Life", sans-serif;
+            text-align: right;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+        button:hover {
+            background-color: #00BFFF;
+            color: #FFF;
+        }
+    }
+}
+
+.sec00 {
+    img {
+        width: 100%;
+        height: 448px;
+    }
+}
+
+.footer1 {
+    width: 100%;
+    height: 402px;
+    background: var(--black, #0B0706);
+    margin-top: 0px;
+    .footerdiv1 {
+        padding-top: 97px;
+        padding-left: 110px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        .class41 {
+            img {
+                width: 160px;
+                height: 50px;
+                margin-right: 30px;
+            }
+        }
+        .divli12 {
+            padding-top: 17px;
+            padding-left: 40px;
+            ul {
+                li {
+                    color: #FFF;
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 160%; /* 25.6px */
+                    margin-bottom: 20px;
+                }
+            }
+        }
+        .maindiv24 {
+            padding-left: 110px;
+            h2 {
+                width: 440px;
+                color: #FFF;
+                font-family: "ALK Life", sans-serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 140%; /* 56px */
+            }
+            .maindiv10 {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                input {
+                    width: 300px;
+                    height: 63px;
+                    border-radius: 4px;
+                    border: 1px solid rgba(235, 240, 249, 0.30);
+                    color: rgba(235, 240, 249, 0.30);
+                    font-family: "ALK Life", sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    padding: 22px 24px;
+                }
+                button {
+                height: 64px;
+                padding: 16px 32px;
+                -webkit-box-pack: center;
+                    -ms-flex-pack: center;
+                        justify-content: center;
+                -webkit-box-align: center;
+                    -ms-flex-align: center;
+                        align-items: center;
+                gap: 10px;
+                border-radius: 4px;
+                background: #FFF;
+                -webkit-backdrop-filter: blur(40px);
+                        backdrop-filter: blur(40px);
+                color: var(--primary-text, #1D2130);
+                font-family: "ALK Life", sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                }
+            }
+        }
+    }
+}
